@@ -6,10 +6,7 @@
       <class name="test.testappandroid">
         <methods>
           <include name="setUp"/>
-          <include name="amen"/>
-          <include name="balltext"/>
           <include name="clogin"/>
-          <include name="log"/>
         </methods>
       </class> <!-- test.testappandroid -->
     </classes>
