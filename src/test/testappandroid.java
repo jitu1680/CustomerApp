@@ -56,36 +56,60 @@ public void setUp() throws MalformedURLException{
 }
 
 
+
+
+
+//Welcome text on nevigation pane.
 @Test
 public void amen(){
-	System.out.println("men function");
+	System.out.println(" Check for welcome text");
 	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
      WebElement nevi=driver.findElement(objlogin.menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Welcome_Text);
-     System.out.println("welcome text is displayed :" + wel.isDisplayed());	
+     System.out.println("welcome text is displayed : " + wel.isDisplayed());	
 }
 
 
 
+
+
+//login button and login page opening
 @Test
-public void balltext(){
-	System.out.println("all text");
-	List<WebElement> no = driver.findElements(By.xpath("//android.widget.ScrollView//android.widget.TextView"));
-	int number = no.size();
-	System.out.println(number);
-	for (WebElement element : no) {
-        System.out.println(element.getText());
-    }
+public void bloginbutton(){
+	System.out.println("login button and login page opening");
+	WebElement loginbutton= driver.findElement(log.ButtonLogin);
+	System.out.println("Is login button is displayed : " +loginbutton.isDisplayed());
+	loginbutton.click();
+	}
+
+
+
+//login page items
+@Test
+public void loginpageitems(){
+	System.out.println("Login page contents");
+	
+	WebElement title= driver.findElement(log.Titletext);
+    System.out.println("Title text =" +title.getText());
+    
+    WebElement subtext= driver.findElement(log.Subtext);
+    System.out.println("Sub text : " +subtext.getText());
+    
+    WebElement nextbutton= driver.findElement(log.ButtonLogin);
+    System.out.println("Text over button : " +nextbutton.getText());
+    System.out.println("Next button is displayed : " +nextbutton.isDisplayed());
+    System.out.println("Next button is enabled : " +nextbutton.isEnabled());
+    
+    
+    WebElement enterphone = driver.findElement(log.Enterphoneno);
+    enterphone.click();
+    System.out.println("Color of the next button : " +nextbutton.getCssValue("background-color"));
+    enterphone.sendKeys("8826611401");
+    System.out.println("Color of the next button : " +nextbutton.getCssValue("background-color"));
+    
 }
 
-@Test
-public void clogin(){
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//All_Elements_Nevigationdrawer objlogin = new All_Elements_Nevigationdrawer(driver);
-//Login obj = new Login(driver);
-((WebElement) objlogin.Login).click();   //why this is not taking without typing webelement.
-}
 
 @Test
 public void log(){
