@@ -1,18 +1,33 @@
 package test;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.Driver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import nevigationdrawer.*;
 import nevigationdrawer.All_Elements_Nevigationdrawer;
+import org.openqa.selenium.interactions.touch.ScrollAction;
+import org.openqa.selenium.interactions.touch.TouchActions;
+
+import junit.framework.Assert;
+
+import java.io.File;
 
 
 public class testappandroid {
@@ -38,19 +53,17 @@ public void setUp() throws MalformedURLException{
    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
    objlogin = new All_Elements_Nevigationdrawer(driver);
    log = new Login (driver);
-   driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 }
 
 
-
-
-@Test 
+@Test
 public void amen(){
 	System.out.println("men function");
 	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	 ((WebElement) objlogin.menu).click();
-	WebElement nevigation= driver.findElement(objlogin.Welcome_Text);
-	 System.out.println(nevigation.isDisplayed());
+     WebElement nevi=driver.findElement(objlogin.menu);
+     nevi.click();
+     WebElement wel= driver.findElement(objlogin.Welcome_Text);
+     System.out.println("welcome text is displayed :" + wel.isDisplayed());	
 }
 
 
