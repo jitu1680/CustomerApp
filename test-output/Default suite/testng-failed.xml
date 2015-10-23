@@ -6,7 +6,7 @@
       <class name="test.testappandroid">
         <methods>
           <include name="setUp"/>
-          <include name="clogin"/>
+          <include name="loginpageitems"/>
         </methods>
       </class> <!-- test.testappandroid -->
     </classes>

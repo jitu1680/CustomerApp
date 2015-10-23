@@ -51,8 +51,8 @@ public void setUp() throws MalformedURLException{
 //Create RemoteWebDriver instance and connect to the Appium server
  //It will launch the Calculator App in Android Device using the configurations specified in Desired Capabilities
    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-   objlogin = new All_Elements_Nevigationdrawer(driver);
-   log = new Login (driver);
+   objlogin = new All_Elements_Nevigationdrawer();
+   log = new Login ();
 }
 
 
@@ -78,7 +78,7 @@ public void amen(){
 @Test
 public void bloginbutton(){
 	System.out.println("login button and login page opening");
-	WebElement loginbutton= driver.findElement(log.ButtonLogin);
+	WebElement loginbutton= driver.findElement(objlogin.Login);
 	System.out.println("Is login button is displayed : " +loginbutton.isDisplayed());
 	loginbutton.click();
 	}
@@ -103,24 +103,14 @@ public void loginpageitems(){
     
     
     WebElement enterphone = driver.findElement(log.Enterphoneno);
-    enterphone.click();
-    System.out.println("Color of the next button : " +nextbutton.getCssValue("background-color"));
+    System.out.println("Text over enterphone number" +enterphone.getText());
+    System.out.println("Click the enterphone no ");
     enterphone.sendKeys("8826611401");
-    System.out.println("Color of the next button : " +nextbutton.getCssValue("background-color"));
+
     
 }
 
 
-@Test
-public void log(){
-	System.out.println("inside log function");
-driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-List<WebElement> li =  driver.findElements(log.alllogintext);
-int nuber = li.size();
-System.out.println(nuber);
-for (WebElement el :li){
-	System.out.println(el.getText());
-}
 
 }
 
@@ -128,4 +118,3 @@ for (WebElement el :li){
 	
 
 
-}

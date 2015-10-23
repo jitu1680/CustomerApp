@@ -1,15 +1,8 @@
 package nevigationdrawer;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class All_Elements_Nevigationdrawer {
-  WebDriver driver;
-  public All_Elements_Nevigationdrawer (WebDriver driver)
-  {
-             this.driver = driver;
-  }
-
 
  public By Welcome_Text = By.id("com.grofers.customerapp:id/welcome_layout");
  public By User_current_location = By.id("com.grofers.customerapp:id/user_current_locality");
