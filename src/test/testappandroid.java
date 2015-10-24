@@ -115,7 +115,7 @@ public void cloginpageitems(){
 }
 
 //Verification page 
-@Test
+@Test 
 public void eVerify(){
 	//Title
 	System.out.println("Verification page function");
@@ -136,10 +136,13 @@ public void eVerify(){
 	 
 	 //Entering verification code
 	 WebElement Enter_Code = driver.findElement(verify.Verification_Entercode);
+	 WebElement done = driver.findElement(verify.Verification_Donebutton);
 	 System.out.println("Displayed text = " +Enter_Code.getText());
 	 Enter_Code.click();
-	 //Enter_Code.sendKeys("9314");
-	
+	 Enter_Code.sendKeys("9314");
+	 done.click();
+	 
+	 
 	
 }
 
