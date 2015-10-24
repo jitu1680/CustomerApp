@@ -20,6 +20,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import allpages.VerificationCode;
 import nevigationdrawer.*;
 import nevigationdrawer.All_Elements_Nevigationdrawer;
 import org.openqa.selenium.interactions.touch.ScrollAction;
@@ -34,6 +36,7 @@ public class testappandroid {
 WebDriver driver;
 Login log;
 All_Elements_Nevigationdrawer objlogin;
+VerificationCode verify;
 
 
 @BeforeClass
@@ -53,6 +56,7 @@ public void setUp() throws MalformedURLException{
    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
    objlogin = new All_Elements_Nevigationdrawer();
    log = new Login ();
+   verify = new VerificationCode();
 }
 
 
@@ -87,7 +91,7 @@ public void bloginbutton(){
 
 //login page items
 @Test
-public void loginpageitems(){
+public void cloginpageitems(){
 	System.out.println("Login page contents");
 	
 	WebElement title= driver.findElement(log.Login_Titletext);
@@ -106,8 +110,40 @@ public void loginpageitems(){
     System.out.println("Text over enterphone number :" +enterphone.getText());
     System.out.println("Click the enterphone no ");
     enterphone.sendKeys("8826611401");
-
+    nextbutton.click();
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }
+
+//Verification page 
+@Test
+public void eVerify(){
+	//Title
+	System.out.println("Verification page function");
+	WebElement title = driver.findElement(verify.Verification_titletext);
+	System.out.println("Title text = " +title.getText());
+	
+	//subtitle
+	WebElement subtext = driver.findElement(verify.Verification_subtext);
+	System.out.println("Sub Text =" +subtext.getText());
+	
+	//Loader
+	WebElement load = driver.findElement(verify.Verification_progressbar);
+	System.out.println("Is progressbar present =" +load.isDisplayed());
+	
+	// Again sub text over verification code
+	 WebElement text = driver.findElement(verify.Verification_textmanually);
+	 System.out.println("Text for manually entering code = " +text.getText());
+	 
+	 //Entering verification code
+	 WebElement Enter_Code = driver.findElement(verify.Verification_Entercode);
+	 System.out.println("Displayed text = " +Enter_Code.getText());
+	 Enter_Code.click();
+	 //Enter_Code.sendKeys("9314");
+	
+	
+}
+
+
 
 
 
