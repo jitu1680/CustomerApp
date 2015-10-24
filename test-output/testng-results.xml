@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19225" started-at="2015-10-23T05:25:19Z" finished-at="2015-10-23T05:25:38Z">
+  <suite name="Default suite" duration-ms="28120" started-at="2015-10-24T09:48:19Z" finished-at="2015-10-24T09:48:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19225" started-at="2015-10-23T05:25:19Z" finished-at="2015-10-23T05:25:38Z">
+    <test name="Default test" duration-ms="28120" started-at="2015-10-24T09:48:19Z" finished-at="2015-10-24T09:48:47Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@28f67ac7]" name="setUp" is-config="true" duration-ms="6482" started-at="2015-10-23T10:55:19Z" finished-at="2015-10-23T10:55:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@28f67ac7]" name="setUp" is-config="true" duration-ms="7503" started-at="2015-10-24T15:18:19Z" finished-at="2015-10-24T15:18:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@28f67ac7]" name="amen" duration-ms="6334" started-at="2015-10-23T10:55:26Z" finished-at="2015-10-23T10:55:32Z">
+        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@28f67ac7]" name="amen" duration-ms="14273" started-at="2015-10-24T15:18:27Z" finished-at="2015-10-24T15:18:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amen -->
-        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@28f67ac7]" name="bloginbutton" duration-ms="724" started-at="2015-10-23T10:55:32Z" finished-at="2015-10-23T10:55:33Z">
+        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@28f67ac7]" name="bloginbutton" duration-ms="672" started-at="2015-10-24T15:18:41Z" finished-at="2015-10-24T15:18:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bloginbutton -->
-        <test-method status="PASS" signature="loginpageitems()[pri:0, instance:test.testappandroid@28f67ac7]" name="loginpageitems" duration-ms="5659" started-at="2015-10-23T10:55:33Z" finished-at="2015-10-23T10:55:38Z">
+        <test-method status="PASS" signature="loginpageitems()[pri:0, instance:test.testappandroid@28f67ac7]" name="loginpageitems" duration-ms="5646" started-at="2015-10-24T15:18:41Z" finished-at="2015-10-24T15:18:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpageitems -->

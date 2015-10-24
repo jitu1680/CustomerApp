@@ -64,9 +64,9 @@ public void setUp() throws MalformedURLException{
 public void amen(){
 	System.out.println(" Check for welcome text");
 	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-     WebElement nevi=driver.findElement(objlogin.menu);
+     WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
-     WebElement wel= driver.findElement(objlogin.Welcome_Text);
+     WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
      System.out.println("welcome text is displayed : " + wel.isDisplayed());	
 }
 
@@ -78,7 +78,7 @@ public void amen(){
 @Test
 public void bloginbutton(){
 	System.out.println("login button and login page opening");
-	WebElement loginbutton= driver.findElement(objlogin.Login);
+	WebElement loginbutton= driver.findElement(objlogin.Nevigation_Login);
 	System.out.println("Is login button is displayed : " +loginbutton.isDisplayed());
 	loginbutton.click();
 	}
@@ -90,24 +90,23 @@ public void bloginbutton(){
 public void loginpageitems(){
 	System.out.println("Login page contents");
 	
-	WebElement title= driver.findElement(log.Titletext);
+	WebElement title= driver.findElement(log.Login_Titletext);
     System.out.println("Title text =" +title.getText());
     
-    WebElement subtext= driver.findElement(log.Subtext);
+    WebElement subtext= driver.findElement(log.Login_Subtext);
     System.out.println("Sub text : " +subtext.getText());
     
-    WebElement nextbutton= driver.findElement(log.ButtonLogin);
+    WebElement nextbutton= driver.findElement(log.Login_ButtonLogin);
     System.out.println("Text over button : " +nextbutton.getText());
     System.out.println("Next button is displayed : " +nextbutton.isDisplayed());
     System.out.println("Next button is enabled : " +nextbutton.isEnabled());
     
     
-    WebElement enterphone = driver.findElement(log.Enterphoneno);
-    System.out.println("Text over enterphone number" +enterphone.getText());
+    WebElement enterphone = driver.findElement(log.Login_Enterphoneno);
+    System.out.println("Text over enterphone number :" +enterphone.getText());
     System.out.println("Click the enterphone no ");
     enterphone.sendKeys("8826611401");
 
-    
 }
 
 
