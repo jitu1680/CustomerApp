@@ -1,8 +1,6 @@
 package test;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Driver;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -21,6 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import allpages.General;
 import allpages.VerificationCode;
 import nevigationdrawer.*;
 import nevigationdrawer.All_Elements_Nevigationdrawer;
@@ -37,6 +36,7 @@ WebDriver driver;
 Login log;
 All_Elements_Nevigationdrawer objlogin;
 VerificationCode verify;
+General gen;
 
 
 @BeforeClass
@@ -57,6 +57,7 @@ public void setUp() throws MalformedURLException{
    objlogin = new All_Elements_Nevigationdrawer();
    log = new Login ();
    verify = new VerificationCode();
+   gen = new General(driver);
 }
 
 
@@ -67,7 +68,7 @@ public void setUp() throws MalformedURLException{
 @Test
 public void amen(){
 	System.out.println(" Check for welcome text");
-	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 gen.waitfor();
      WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
@@ -141,10 +142,17 @@ public void eVerify(){
 	 Enter_Code.click();
 	 Enter_Code.sendKeys("9314");
 	 done.click();
-	 
-	 
+	 gen.waitfor();
+	 gen.click_out();
+	 System.out.println("out clicked");
+	
 	
 }
+
+
+
+
+
 
 
 

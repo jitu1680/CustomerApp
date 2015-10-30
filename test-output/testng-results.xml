@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38092" started-at="2015-10-24T11:59:50Z" finished-at="2015-10-24T12:00:28Z">
+  <suite name="Default suite" duration-ms="37094" started-at="2015-10-30T07:48:59Z" finished-at="2015-10-30T07:49:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38092" started-at="2015-10-24T11:59:50Z" finished-at="2015-10-24T12:00:28Z">
+    <test name="Default test" duration-ms="37094" started-at="2015-10-30T07:48:59Z" finished-at="2015-10-30T07:49:36Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@28f67ac7]" name="setUp" is-config="true" duration-ms="6574" started-at="2015-10-24T17:29:50Z" finished-at="2015-10-24T17:29:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@28f67ac7]" name="setUp" is-config="true" duration-ms="6135" started-at="2015-10-30T13:18:59Z" finished-at="2015-10-30T13:19:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@28f67ac7]" name="amen" duration-ms="16579" started-at="2015-10-24T17:29:56Z" finished-at="2015-10-24T17:30:13Z">
+        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@28f67ac7]" name="amen" duration-ms="7604" started-at="2015-10-30T13:19:05Z" finished-at="2015-10-30T13:19:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amen -->
-        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@28f67ac7]" name="bloginbutton" duration-ms="393" started-at="2015-10-24T17:30:13Z" finished-at="2015-10-24T17:30:13Z">
+        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@28f67ac7]" name="bloginbutton" duration-ms="346" started-at="2015-10-30T13:19:13Z" finished-at="2015-10-30T13:19:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bloginbutton -->
-        <test-method status="PASS" signature="cloginpageitems()[pri:0, instance:test.testappandroid@28f67ac7]" name="cloginpageitems" duration-ms="6558" started-at="2015-10-24T17:30:13Z" finished-at="2015-10-24T17:30:20Z">
+        <test-method status="PASS" signature="cloginpageitems()[pri:0, instance:test.testappandroid@28f67ac7]" name="cloginpageitems" duration-ms="9152" started-at="2015-10-30T13:19:13Z" finished-at="2015-10-30T13:19:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cloginpageitems -->
-        <test-method status="PASS" signature="eVerify()[pri:0, instance:test.testappandroid@28f67ac7]" name="eVerify" duration-ms="7958" started-at="2015-10-24T17:30:20Z" finished-at="2015-10-24T17:30:28Z">
+        <test-method status="PASS" signature="eVerify()[pri:0, instance:test.testappandroid@28f67ac7]" name="eVerify" duration-ms="13838" started-at="2015-10-30T13:19:22Z" finished-at="2015-10-30T13:19:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eVerify -->
