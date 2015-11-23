@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,33 +19,36 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import allpages.General;
 import allpages.VerificationCode;
 import nevigationdrawer.*;
-import nevigationdrawer.All_Elements_Nevigationdrawer;
-import org.openqa.selenium.interactions.touch.ScrollAction;
-import org.openqa.selenium.interactions.touch.TouchActions;
+
 
 import junit.framework.Assert;
 
-import java.io.File;
+
 
 
 public class testappandroid {
-WebDriver driver;
+	private AndroidDriver<MobileElement> driver;
+//AndroidDriver<WebElement> appiumDriver;
 Login log;
 All_Elements_Nevigationdrawer objlogin;
 VerificationCode verify;
 General gen;
 
 
+
+@SuppressWarnings("rawtypes")
 @BeforeClass
 public void setUp() throws MalformedURLException{
 	//Set up desired capabilities and pass the Android app-activity and app-package to Appium
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	capabilities.setCapability("BROWSER_NAME", "Android");
-	capabilities.setCapability("VERSION", "4.4.4"); 
-	capabilities.setCapability("deviceName","97d0e1a6");
+	capabilities.setCapability("VERSION", "5.1"); 
+	capabilities.setCapability("deviceName","LGH818817f4eaf");
 	capabilities.setCapability("platformName","Android");
  
    capabilities.setCapability("appPackage", "com.grofers.customerapp");
@@ -53,11 +56,13 @@ public void setUp() throws MalformedURLException{
 	capabilities.setCapability("appActivity","com.grofers.customerapp.activities.ActivitySplashScreen"); // This is Launcher activity of your app (you can get it from apk info app)
 //Create RemoteWebDriver instance and connect to the Appium server
  //It will launch the Calculator App in Android Device using the configurations specified in Desired Capabilities
-   driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+   driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+   //appiumDriver = new AndroidDriver<WebElement> (new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
    objlogin = new All_Elements_Nevigationdrawer();
    log = new Login ();
    verify = new VerificationCode();
    gen = new General(driver);
+ 
 }
 
 
@@ -68,7 +73,7 @@ public void setUp() throws MalformedURLException{
 @Test
 public void amen(){
 	System.out.println(" Check for welcome text");
-	 gen.waitfor();
+	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
      WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
@@ -142,20 +147,14 @@ public void eVerify(){
 	 Enter_Code.click();
 	 Enter_Code.sendKeys("9314");
 	 done.click();
-	 gen.waitfor();
-	 gen.click_out();
 	 System.out.println("out clicked");
-	
+	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 gen.swipeLeft();
+	 System.out.println("Swiped");
+	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 
 	
 }
-
-
-
-
-
-
-
-
 
 
 }
