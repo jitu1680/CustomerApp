@@ -6,6 +6,10 @@
       <class name="test.testappandroid">
         <methods>
           <include name="setUp"/>
+          <include name="amen"/>
+          <include name="cloginpageitems"/>
+          <include name="tearDown"/>
+          <include name="bloginbutton"/>
           <include name="eVerify"/>
         </methods>
       </class> <!-- test.testappandroid -->

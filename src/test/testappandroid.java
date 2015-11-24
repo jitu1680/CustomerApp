@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -156,10 +157,17 @@ public void eVerify(){
 	
 }
 
+@AfterTest
+public void tearDown() {
+    if (driver != null) {
+        driver.quit();
+    }
 
+}
 }
 
 
 	
+
 
 
