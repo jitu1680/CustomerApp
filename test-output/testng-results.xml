@@ -1,36 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31203" started-at="2015-11-24T10:53:27Z" finished-at="2015-11-24T10:53:58Z">
+  <suite name="Default suite" duration-ms="72203" started-at="2015-11-29T15:44:59Z" finished-at="2015-11-29T15:46:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31203" started-at="2015-11-24T10:53:27Z" finished-at="2015-11-24T10:53:58Z">
+    <test name="Default test" duration-ms="72203" started-at="2015-11-29T15:44:59Z" finished-at="2015-11-29T15:46:11Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@5a01ccaa]" name="setUp" is-config="true" duration-ms="7193" started-at="2015-11-24T16:23:27Z" finished-at="2015-11-24T16:23:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@5e025e70]" name="setUp" is-config="true" duration-ms="6880" started-at="2015-11-29T21:14:59Z" finished-at="2015-11-29T21:15:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@5a01ccaa]" name="amen" duration-ms="6098" started-at="2015-11-24T16:23:34Z" finished-at="2015-11-24T16:23:40Z">
+        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@5e025e70]" name="amen" duration-ms="8215" started-at="2015-11-29T21:15:06Z" finished-at="2015-11-29T21:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amen -->
-        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@5a01ccaa]" name="bloginbutton" duration-ms="511" started-at="2015-11-24T16:23:40Z" finished-at="2015-11-24T16:23:40Z">
+        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@5e025e70]" name="bloginbutton" duration-ms="608" started-at="2015-11-29T21:15:14Z" finished-at="2015-11-29T21:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bloginbutton -->
-        <test-method status="PASS" signature="cloginpageitems()[pri:0, instance:test.testappandroid@5a01ccaa]" name="cloginpageitems" duration-ms="6376" started-at="2015-11-24T16:23:40Z" finished-at="2015-11-24T16:23:47Z">
+        <test-method status="PASS" signature="cloginpageitems()[pri:0, instance:test.testappandroid@5e025e70]" name="cloginpageitems" duration-ms="6628" started-at="2015-11-29T21:15:15Z" finished-at="2015-11-29T21:15:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cloginpageitems -->
-        <test-method status="PASS" signature="eVerify()[pri:0, instance:test.testappandroid@5a01ccaa]" name="eVerify" duration-ms="10138" started-at="2015-11-24T16:23:47Z" finished-at="2015-11-24T16:23:57Z">
+        <test-method status="FAIL" signature="eVerify()[pri:0, instance:test.testappandroid@5e025e70]" name="eVerify" duration-ms="8102" started-at="2015-11-29T21:15:21Z" finished-at="2015-11-29T21:15:29Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'Jitenders-MacBook-Air.local', ip: '192.168.1.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=5.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 59cb84de-6074-4d0f-9d5f-f634e41ef0b9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'Jitenders-MacBook-Air.local', ip: '192.168.1.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=5.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 59cb84de-6074-4d0f-9d5f-f634e41ef0b9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:301)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:352)
+	at allpages.General.swipeLeft(General.java:27)
+	at test.testappandroid.eVerify(testappandroid.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eVerify -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.testappandroid@5a01ccaa]" name="tearDown" is-config="true" duration-ms="859" started-at="2015-11-24T16:23:57Z" finished-at="2015-11-24T16:23:58Z">
+        <test-method status="FAIL" signature="fserach()[pri:0, instance:test.testappandroid@5e025e70]" name="fserach" duration-ms="41741" started-at="2015-11-29T21:15:29Z" finished-at="2015-11-29T21:16:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'Jitenders-MacBook-Air.local', ip: '192.168.1.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=5.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 59cb84de-6074-4d0f-9d5f-f634e41ef0b9
+*** Element info: {Using=id, value=com.grofers.customerapp:id/edit_text_search}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'Jitenders-MacBook-Air.local', ip: '192.168.1.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.5', java.version: '1.8.0_45'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=5.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 59cb84de-6074-4d0f-9d5f-f634e41ef0b9
+*** Element info: {Using=id, value=com.grofers.customerapp:id/edit_text_search}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at test.testappandroid.fserach(testappandroid.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- fserach -->
       </class> <!-- test.testappandroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

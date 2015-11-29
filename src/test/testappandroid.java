@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -22,6 +23,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import allpages.Allpage_id;
 import allpages.General;
 import allpages.VerificationCode;
 import nevigationdrawer.*;
@@ -39,6 +41,7 @@ Login log;
 All_Elements_Nevigationdrawer objlogin;
 VerificationCode verify;
 General gen;
+Allpage_id allid;
 
 
 
@@ -63,6 +66,7 @@ public void setUp() throws MalformedURLException{
    log = new Login ();
    verify = new VerificationCode();
    gen = new General(driver);
+   allid = new Allpage_id();
  
 }
 
@@ -134,13 +138,17 @@ public void eVerify(){
 	System.out.println("Sub Text =" +subtext.getText());
 	
 	//Loader
+	try{
 	WebElement load = driver.findElement(verify.Verification_progressbar);
 	System.out.println("Is progressbar present =" +load.isDisplayed());
 	
 	// Again sub text over verification code
 	 WebElement text = driver.findElement(verify.Verification_textmanually);
 	 System.out.println("Text for manually entering code = " +text.getText());
-	 
+	}
+	catch (NoSuchElementException e){
+		Reporter.log("no such element");
+	}
 	 //Entering verification code
 	 WebElement Enter_Code = driver.findElement(verify.Verification_Entercode);
 	 WebElement done = driver.findElement(verify.Verification_Donebutton);
@@ -157,13 +165,67 @@ public void eVerify(){
 	
 }
 
-@AfterTest
-public void tearDown() {
-    if (driver != null) {
-        driver.quit();
+
+
+
+//Search and add item and go to My cart.
+
+@Test
+public void fserach()  
+      { 
+       MobileElement search= driver.findElement(allid.feedsearch);
+       search.tap(1, 200);
+       MobileElement search2 = driver.findElement(allid.search);
+       search2.tap(1, 200);
+       search2.sendKeys("aquafina");
+//key code for search button is 66 on keyboard
+      driver.pressKeyCode(66);
+      MobileElement add = driver.findElement(allid.addbutton_searched);
+      add.tap(1, 100);
+      MobileElement tapcart = driver.findElement(allid.taketocart);
+      tapcart.tap(1, 200);
     }
 
+
+// go to checkout page.
+ 
+public void gcheckout()
+{
+	MobileElement tapchekout = driver.findElement(allid.checkoutbutton);
+	tapchekout.tap(1, 200);
+	
+	
+	
 }
+
+// payment option page
+
+public void hpaymentoption()
+{
+	MobileElement paymentproceed = driver.findElement(allid.proceedtopayment);
+	paymentproceed.tap(1, 200);
+	
+	
+}
+
+//paying amount
+
+public void ipaymoney()
+{
+	MobileElement paymenttype =driver.findElement(allid.payment_option);
+	driver.scrollTo("Cash on Delivery");
+}
+
+
+
+
+//@AfterTest
+//public void tearDown() {
+//    if (driver != null) {
+//        driver.quit();
+//    }
+//
+//}
 }
 
 
