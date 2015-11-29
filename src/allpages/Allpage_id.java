@@ -35,9 +35,19 @@ public class Allpage_id {
 
 
     //payment option page
-    public By payment_option = By.id("com.grofers.customerapp:id/paymentOption_title");
+    public By payment_option = By.xpath("//android.widget.TextView[@text='Cash on Delivery']");
     public By total_amount_paymentoptionpage = By.id("com.grofers.customerapp:id/payable_amount");
     public By pamentoption_backbutton = By.xpath("//android.widget.ImageButton[@content-desc= 'Navigate up']");
     
+    
+    //Place order popup on cod
+    public By placeorder_yes = By.id("com.grofers.customerapp:id/dialog_button3");
+    
+    
+    
+    //Thankyou page
+    
+    public By continueshopping_button = By.id("com.grofers.customerapp:id/continueShoppingBtn");
+    public By checkorderstatus_button = By.id("com.grofers.customerapp:id/orderstatusBtn");
     
 }

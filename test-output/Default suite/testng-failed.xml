@@ -6,8 +6,7 @@
       <class name="test.testappandroid">
         <methods>
           <include name="setUp"/>
-          <include name="fserach"/>
-          <include name="eVerify"/>
+          <include name="d_Verify"/>
         </methods>
       </class> <!-- test.testappandroid -->
     </classes>

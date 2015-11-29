@@ -76,9 +76,10 @@ public void setUp() throws MalformedURLException{
 
 //Welcome text on nevigation pane.
 @Test
-public void amen(){
+public void a_men(){
 	System.out.println(" Check for welcome text");
-	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	gen.waithere20();
      WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
@@ -91,7 +92,7 @@ public void amen(){
 
 //login button and login page opening
 @Test
-public void bloginbutton(){
+public void b_loginbutton(){
 	System.out.println("login button and login page opening");
 	WebElement loginbutton= driver.findElement(objlogin.Nevigation_Login);
 	System.out.println("Is login button is displayed : " +loginbutton.isDisplayed());
@@ -102,7 +103,7 @@ public void bloginbutton(){
 
 //login page items
 @Test
-public void cloginpageitems(){
+public void c_loginpageitems(){
 	System.out.println("Login page contents");
 	
 	WebElement title= driver.findElement(log.Login_Titletext);
@@ -127,7 +128,7 @@ public void cloginpageitems(){
 
 //Verification page 
 @Test 
-public void eVerify(){
+public void d_Verify(){
 	//Title
 	System.out.println("Verification page function");
 	WebElement title = driver.findElement(verify.Verification_titletext);
@@ -150,17 +151,17 @@ public void eVerify(){
 		Reporter.log("no such element");
 	}
 	 //Entering verification code
-	 WebElement Enter_Code = driver.findElement(verify.Verification_Entercode);
+	 MobileElement Enter_Code = driver.findElement(verify.Verification_Entercode);
 	 WebElement done = driver.findElement(verify.Verification_Donebutton);
 	 System.out.println("Displayed text = " +Enter_Code.getText());
-	 Enter_Code.click();
+	 Enter_Code.tap(1, 200);
 	 Enter_Code.sendKeys("9314");
 	 done.click();
-	 System.out.println("out clicked");
-	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 //System.out.println("out clicked");
+	 gen.waithere20();
 	 gen.swipeLeft();
 	 System.out.println("Swiped");
-	 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 gen.waithere20();
 	 
 	
 }
@@ -171,7 +172,7 @@ public void eVerify(){
 //Search and add item and go to My cart.
 
 @Test
-public void fserach()  
+public void e_serach()  
       { 
        MobileElement search= driver.findElement(allid.feedsearch);
        search.tap(1, 200);
@@ -188,9 +189,10 @@ public void fserach()
 
 
 // go to checkout page.
- 
-public void gcheckout()
+@Test
+public void f_checkout()
 {
+	System.out.println("clickon chekcout");
 	MobileElement tapchekout = driver.findElement(allid.checkoutbutton);
 	tapchekout.tap(1, 200);
 	
@@ -199,8 +201,8 @@ public void gcheckout()
 }
 
 // payment option page
-
-public void hpaymentoption()
+@Test
+public void g_paymentoption()
 {
 	MobileElement paymentproceed = driver.findElement(allid.proceedtopayment);
 	paymentproceed.tap(1, 200);
@@ -209,11 +211,16 @@ public void hpaymentoption()
 }
 
 //paying amount
-
-public void ipaymoney()
+@Test
+public void h_paymoney()
 {
-	MobileElement paymenttype =driver.findElement(allid.payment_option);
 	driver.scrollTo("Cash on Delivery");
+	MobileElement paymenttype =driver.findElement(allid.payment_option);
+	paymenttype.tap(1, 200);
+	MobileElement yesbtn = driver.findElement(allid.placeorder_yes);
+	yesbtn.tap(1, 200);
+	MobileElement continueshopping = driver.findElement(allid.continueshopping_button);
+	continueshopping.tap(1, 200);
 }
 
 
