@@ -20,13 +20,18 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.internal.thread.ThreadUtil;
+
+import com.google.common.base.Verify;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import allpages.Addressitems;
 import allpages.Allpage_id;
 import allpages.General;
 import allpages.VerificationCode;
 import nevigationdrawer.*;
+
 
 
 import junit.framework.Assert;
@@ -42,6 +47,7 @@ All_Elements_Nevigationdrawer objlogin;
 VerificationCode verify;
 General gen;
 Allpage_id allid;
+Addressitems address;
 
 
 
@@ -65,8 +71,9 @@ public void setUp() throws MalformedURLException{
    objlogin = new All_Elements_Nevigationdrawer();
    log = new Login ();
    verify = new VerificationCode();
-   gen = new General(driver);
+   gen = new General(driver,objlogin);
    allid = new Allpage_id();
+   address = new Addressitems(driver,gen,objlogin);
  
 }
 
@@ -75,12 +82,12 @@ public void setUp() throws MalformedURLException{
 
 
 //Welcome text on nevigation pane.
-@Test
+@Test(groups ="sanity")
 public void a_men(){
 	System.out.println(" Check for welcome text");
 	//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	gen.waithere20();
-     WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
+	gen.b_waithere20();
+     MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
      System.out.println("welcome text is displayed : " + wel.isDisplayed());	
@@ -91,7 +98,7 @@ public void a_men(){
 
 
 //login button and login page opening
-@Test
+@Test(groups = "sanity")
 public void b_loginbutton(){
 	System.out.println("login button and login page opening");
 	WebElement loginbutton= driver.findElement(objlogin.Nevigation_Login);
@@ -102,7 +109,7 @@ public void b_loginbutton(){
 
 
 //login page items
-@Test
+@Test(groups ="sanity")
 public void c_loginpageitems(){
 	System.out.println("Login page contents");
 	
@@ -126,8 +133,11 @@ public void c_loginpageitems(){
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }
 
+
+
+
 //Verification page 
-@Test 
+@Test (groups="sanity")
 public void d_Verify(){
 	//Title
 	System.out.println("Verification page function");
@@ -158,10 +168,16 @@ public void d_Verify(){
 	 Enter_Code.sendKeys("9314");
 	 done.click();
 	 //System.out.println("out clicked");
-	 gen.waithere20();
-	 gen.swipeLeft();
+	 //gen.c_waithere5();
+	 try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	 gen.a_swipeLeft();
 	 System.out.println("Swiped");
-	 gen.waithere20();
+	 //gen.waithere20();
 	 
 	
 }
@@ -171,9 +187,10 @@ public void d_Verify(){
 
 //Search and add item and go to My cart.
 
-@Test
+@Test(groups="sanity")
 public void e_serach()  
       { 
+	   gen.c_waithere5();
        MobileElement search= driver.findElement(allid.feedsearch);
        search.tap(1, 200);
        MobileElement search2 = driver.findElement(allid.search);
@@ -189,19 +206,50 @@ public void e_serach()
 
 
 // go to checkout page.
-@Test
+@Test (groups="sanity")
 public void f_checkout()
 {
-	System.out.println("clickon chekcout");
+	System.out.println("click on chekcout");
 	MobileElement tapchekout = driver.findElement(allid.checkoutbutton);
 	tapchekout.tap(1, 200);
+	
+	String Titlecheckout = driver.findElement(allid.chekoutpage_title).getText();
+	org.testng.Assert.assertEquals(Titlecheckout, "Checkout");
+	
+	String TotalamountText = driver.findElement(allid.totalamount_text).getText();
+	org.testng.Assert.assertEquals(TotalamountText,"Total Amount");
+	
+	String DeliveryamountText = driver.findElement(allid.deliverycharges_text).getText();
+	org.testng.Assert.assertEquals(DeliveryamountText, "Delivery Charges");
+	
+	String Amountpayable = driver.findElement(allid.amountPayable_text).getText();
+	org.testng.Assert.assertEquals(Amountpayable, "Amount Payable");
+	
+	String Promocode = driver.findElement(allid.gotPromo_text).getText();
+	org.testng.Assert.assertEquals(Promocode, "Got a promo code?");
+    
+	
+	
+	String DeliveryaddressTitleText = driver.findElement(allid.checkout_addresstitle).getText();
+	org.testng.Assert.assertEquals(DeliveryaddressTitleText, "Delivery Address");
+	
+	String DeliverytimeTitleText = driver.findElement(allid.checkout_timetitle).getText();
+	org.testng.Assert.assertEquals(DeliverytimeTitleText, "Schedule Delivery Date & Time");
+	
+	
+//	String Terms = driver.findElement(allid.TC_text).getText();
+//	org.testng.Assert.assertEquals(Terms, "By using this application, you agree to the \n"
+//			+ "Terms of Service and Privacy Policy");
+	
+	String  ProceedtoPaymentText =driver.findElement(allid.proceedtopayment).getText();
+	org.testng.Assert.assertEquals(ProceedtoPaymentText, "Proceed to Payment");
 	
 	
 	
 }
 
 // payment option page
-@Test
+@Test (groups = "snity")
 public void g_paymentoption()
 {
 	MobileElement paymentproceed = driver.findElement(allid.proceedtopayment);
@@ -211,17 +259,46 @@ public void g_paymentoption()
 }
 
 //paying amount
-@Test
+@Test (groups ="sanity")
 public void h_paymoney()
 {
 	driver.scrollTo("Cash on Delivery");
-	MobileElement paymenttype =driver.findElement(allid.payment_option);
+	MobileElement paymenttype =driver.findElement(allid.payment_option_cod);
 	paymenttype.tap(1, 200);
 	MobileElement yesbtn = driver.findElement(allid.placeorder_yes);
 	yesbtn.tap(1, 200);
+	gen.b_waithere20();
 	MobileElement continueshopping = driver.findElement(allid.continueshopping_button);
 	continueshopping.tap(1, 200);
 }
+
+
+// Adding address when already have address.
+@Test
+public void i_AddAddress()
+{
+address.Newaddress_addision();	
+}
+
+//Modifying an address
+@Test
+public void j_modifyaddress()
+{
+	address.Address_modification();
+	
+}
+//deleting an address
+
+@Test
+public void k_deleteAddres()
+{
+	address.Address_delete();
+}
+	
+
+
+
+
 
 
 

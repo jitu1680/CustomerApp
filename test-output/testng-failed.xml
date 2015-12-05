@@ -6,7 +6,10 @@
       <class name="test.testappandroid">
         <methods>
           <include name="setUp"/>
+          <include name="i_AddAddress"/>
+          <include name="k_deleteAddres"/>
           <include name="d_Verify"/>
+          <include name="j_modifyaddress"/>
         </methods>
       </class> <!-- test.testappandroid -->
     </classes>
