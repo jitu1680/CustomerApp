@@ -1,20 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21107" started-at="2015-11-09T08:43:20Z" finished-at="2015-11-09T08:43:41Z">
+  <suite name="Default suite" duration-ms="154744" started-at="2015-12-05T11:37:52Z" finished-at="2015-12-05T11:40:26Z">
     <groups>
+      <group name="sanity">
+        <method signature="testappandroid.a_men()[pri:0, instance:test.testappandroid@1fbc7afb]" name="a_men" class="test.testappandroid"/>
+        <method signature="testappandroid.b_loginbutton()[pri:0, instance:test.testappandroid@1fbc7afb]" name="b_loginbutton" class="test.testappandroid"/>
+        <method signature="testappandroid.c_loginpageitems()[pri:0, instance:test.testappandroid@1fbc7afb]" name="c_loginpageitems" class="test.testappandroid"/>
+        <method signature="testappandroid.d_Verify()[pri:0, instance:test.testappandroid@1fbc7afb]" name="d_Verify" class="test.testappandroid"/>
+        <method signature="testappandroid.e_serach()[pri:0, instance:test.testappandroid@1fbc7afb]" name="e_serach" class="test.testappandroid"/>
+        <method signature="testappandroid.f_checkout()[pri:0, instance:test.testappandroid@1fbc7afb]" name="f_checkout" class="test.testappandroid"/>
+        <method signature="testappandroid.h_paymoney()[pri:0, instance:test.testappandroid@1fbc7afb]" name="h_paymoney" class="test.testappandroid"/>
+      </group> <!-- sanity -->
+      <group name="snity">
+        <method signature="testappandroid.g_paymentoption()[pri:0, instance:test.testappandroid@1fbc7afb]" name="g_paymentoption" class="test.testappandroid"/>
+      </group> <!-- snity -->
     </groups>
-    <test name="Default test" duration-ms="21107" started-at="2015-11-09T08:43:20Z" finished-at="2015-11-09T08:43:41Z">
+    <test name="Default test" duration-ms="154744" started-at="2015-12-05T11:37:52Z" finished-at="2015-12-05T11:40:26Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@47f37ef1]" name="setUp" is-config="true" duration-ms="6535" started-at="2015-11-09T14:13:20Z" finished-at="2015-11-09T14:13:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@1fbc7afb]" name="setUp" is-config="true" duration-ms="3610" started-at="2015-12-05T17:07:52Z" finished-at="2015-12-05T17:07:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@47f37ef1]" name="amen" duration-ms="14544" started-at="2015-11-09T14:13:27Z" finished-at="2015-11-09T14:13:41Z">
+        <test-method status="PASS" signature="a_men()[pri:0, instance:test.testappandroid@1fbc7afb]" name="a_men" duration-ms="7956" started-at="2015-12-05T17:07:55Z" finished-at="2015-12-05T17:08:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amen -->
+        </test-method> <!-- a_men -->
+        <test-method status="PASS" signature="b_loginbutton()[pri:0, instance:test.testappandroid@1fbc7afb]" name="b_loginbutton" duration-ms="704" started-at="2015-12-05T17:08:03Z" finished-at="2015-12-05T17:08:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_loginbutton -->
+        <test-method status="PASS" signature="c_loginpageitems()[pri:0, instance:test.testappandroid@1fbc7afb]" name="c_loginpageitems" duration-ms="7122" started-at="2015-12-05T17:08:04Z" finished-at="2015-12-05T17:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_loginpageitems -->
+        <test-method status="PASS" signature="d_Verify()[pri:0, instance:test.testappandroid@1fbc7afb]" name="d_Verify" duration-ms="22691" started-at="2015-12-05T17:08:11Z" finished-at="2015-12-05T17:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_Verify -->
+        <test-method status="PASS" signature="e_serach()[pri:0, instance:test.testappandroid@1fbc7afb]" name="e_serach" duration-ms="12668" started-at="2015-12-05T17:08:34Z" finished-at="2015-12-05T17:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_serach -->
+        <test-method status="PASS" signature="f_checkout()[pri:0, instance:test.testappandroid@1fbc7afb]" name="f_checkout" duration-ms="3438" started-at="2015-12-05T17:08:47Z" finished-at="2015-12-05T17:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_checkout -->
+        <test-method status="PASS" signature="g_paymentoption()[pri:0, instance:test.testappandroid@1fbc7afb]" name="g_paymentoption" duration-ms="417" started-at="2015-12-05T17:08:50Z" finished-at="2015-12-05T17:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_paymentoption -->
+        <test-method status="PASS" signature="h_paymoney()[pri:0, instance:test.testappandroid@1fbc7afb]" name="h_paymoney" duration-ms="14814" started-at="2015-12-05T17:08:50Z" finished-at="2015-12-05T17:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_paymoney -->
+        <test-method status="PASS" signature="i_AddAddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="i_AddAddress" duration-ms="36583" started-at="2015-12-05T17:09:05Z" finished-at="2015-12-05T17:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_AddAddress -->
+        <test-method status="PASS" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="j_modifyaddress" duration-ms="40725" started-at="2015-12-05T17:09:42Z" finished-at="2015-12-05T17:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- j_modifyaddress -->
+        <test-method status="PASS" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@1fbc7afb]" name="k_deleteAddres" duration-ms="3975" started-at="2015-12-05T17:10:23Z" finished-at="2015-12-05T17:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- k_deleteAddres -->
       </class> <!-- test.testappandroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
