@@ -30,6 +30,7 @@ import allpages.Addressitems;
 import allpages.Allpage_id;
 import allpages.General;
 import allpages.VerificationCode;
+import allpages.orderitems;
 import nevigationdrawer.*;
 
 
@@ -48,6 +49,7 @@ VerificationCode verify;
 General gen;
 Allpage_id allid;
 Addressitems address;
+orderitems orderobj;
 
 
 
@@ -74,6 +76,7 @@ public void setUp() throws MalformedURLException{
    gen = new General(driver,objlogin);
    allid = new Allpage_id();
    address = new Addressitems(driver,gen,objlogin);
+   orderobj = new orderitems(driver, objlogin);
  
 }
 
@@ -284,7 +287,7 @@ address.Newaddress_addision();
 @Test
 public void j_modifyaddress()
 {
-	address.Address_modification();
+	
 	
 }
 //deleting an address
@@ -294,8 +297,29 @@ public void k_deleteAddres()
 {
 	address.Address_delete();
 }
-	
 
+// label assertions and going back
+@Test
+public void l_labels()
+{
+address.click_addAddress();
+address.Address_labels_home();
+address.Address_label_office();
+address.Address_label_other();
+address.go_back();
+}
+
+//Order status
+@Test 
+public void m_ordertestcases()
+{
+	orderobj.openOrder();
+	orderobj.orderpageverify();
+	orderobj.orderdetailpage();
+	orderobj.callUs();
+	orderobj.email();
+	address.go_back();
+}
 
 
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="1" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="154744" started-at="2015-12-05T11:37:52Z" finished-at="2015-12-05T11:40:26Z">
+  <suite name="Default suite" duration-ms="136131" started-at="2015-12-07T11:15:10Z" finished-at="2015-12-07T11:17:26Z">
     <groups>
       <group name="sanity">
         <method signature="testappandroid.a_men()[pri:0, instance:test.testappandroid@1fbc7afb]" name="a_men" class="test.testappandroid"/>
@@ -17,56 +17,104 @@
         <method signature="testappandroid.g_paymentoption()[pri:0, instance:test.testappandroid@1fbc7afb]" name="g_paymentoption" class="test.testappandroid"/>
       </group> <!-- snity -->
     </groups>
-    <test name="Default test" duration-ms="154744" started-at="2015-12-05T11:37:52Z" finished-at="2015-12-05T11:40:26Z">
+    <test name="Default test" duration-ms="136131" started-at="2015-12-07T11:15:10Z" finished-at="2015-12-07T11:17:26Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@1fbc7afb]" name="setUp" is-config="true" duration-ms="3610" started-at="2015-12-05T17:07:52Z" finished-at="2015-12-05T17:07:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@1fbc7afb]" name="setUp" is-config="true" duration-ms="4162" started-at="2015-12-07T16:45:10Z" finished-at="2015-12-07T16:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="a_men()[pri:0, instance:test.testappandroid@1fbc7afb]" name="a_men" duration-ms="7956" started-at="2015-12-05T17:07:55Z" finished-at="2015-12-05T17:08:03Z">
+        <test-method status="PASS" signature="a_men()[pri:0, instance:test.testappandroid@1fbc7afb]" name="a_men" duration-ms="8449" started-at="2015-12-07T16:45:15Z" finished-at="2015-12-07T16:45:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_men -->
-        <test-method status="PASS" signature="b_loginbutton()[pri:0, instance:test.testappandroid@1fbc7afb]" name="b_loginbutton" duration-ms="704" started-at="2015-12-05T17:08:03Z" finished-at="2015-12-05T17:08:04Z">
+        <test-method status="PASS" signature="b_loginbutton()[pri:0, instance:test.testappandroid@1fbc7afb]" name="b_loginbutton" duration-ms="283" started-at="2015-12-07T16:45:23Z" finished-at="2015-12-07T16:45:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- b_loginbutton -->
-        <test-method status="PASS" signature="c_loginpageitems()[pri:0, instance:test.testappandroid@1fbc7afb]" name="c_loginpageitems" duration-ms="7122" started-at="2015-12-05T17:08:04Z" finished-at="2015-12-05T17:08:11Z">
+        <test-method status="PASS" signature="c_loginpageitems()[pri:0, instance:test.testappandroid@1fbc7afb]" name="c_loginpageitems" duration-ms="7491" started-at="2015-12-07T16:45:23Z" finished-at="2015-12-07T16:45:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_loginpageitems -->
-        <test-method status="PASS" signature="d_Verify()[pri:0, instance:test.testappandroid@1fbc7afb]" name="d_Verify" duration-ms="22691" started-at="2015-12-05T17:08:11Z" finished-at="2015-12-05T17:08:34Z">
+        <test-method status="PASS" signature="d_Verify()[pri:0, instance:test.testappandroid@1fbc7afb]" name="d_Verify" duration-ms="23408" started-at="2015-12-07T16:45:31Z" finished-at="2015-12-07T16:45:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- d_Verify -->
-        <test-method status="PASS" signature="e_serach()[pri:0, instance:test.testappandroid@1fbc7afb]" name="e_serach" duration-ms="12668" started-at="2015-12-05T17:08:34Z" finished-at="2015-12-05T17:08:47Z">
+        <test-method status="PASS" signature="e_serach()[pri:0, instance:test.testappandroid@1fbc7afb]" name="e_serach" duration-ms="12366" started-at="2015-12-07T16:45:54Z" finished-at="2015-12-07T16:46:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- e_serach -->
-        <test-method status="PASS" signature="f_checkout()[pri:0, instance:test.testappandroid@1fbc7afb]" name="f_checkout" duration-ms="3438" started-at="2015-12-05T17:08:47Z" finished-at="2015-12-05T17:08:50Z">
+        <test-method status="PASS" signature="f_checkout()[pri:0, instance:test.testappandroid@1fbc7afb]" name="f_checkout" duration-ms="4518" started-at="2015-12-07T16:46:07Z" finished-at="2015-12-07T16:46:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f_checkout -->
-        <test-method status="PASS" signature="g_paymentoption()[pri:0, instance:test.testappandroid@1fbc7afb]" name="g_paymentoption" duration-ms="417" started-at="2015-12-05T17:08:50Z" finished-at="2015-12-05T17:08:50Z">
+        <test-method status="PASS" signature="g_paymentoption()[pri:0, instance:test.testappandroid@1fbc7afb]" name="g_paymentoption" duration-ms="635" started-at="2015-12-07T16:46:11Z" finished-at="2015-12-07T16:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- g_paymentoption -->
-        <test-method status="PASS" signature="h_paymoney()[pri:0, instance:test.testappandroid@1fbc7afb]" name="h_paymoney" duration-ms="14814" started-at="2015-12-05T17:08:50Z" finished-at="2015-12-05T17:09:05Z">
+        <test-method status="PASS" signature="h_paymoney()[pri:0, instance:test.testappandroid@1fbc7afb]" name="h_paymoney" duration-ms="12924" started-at="2015-12-07T16:46:12Z" finished-at="2015-12-07T16:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- h_paymoney -->
-        <test-method status="PASS" signature="i_AddAddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="i_AddAddress" duration-ms="36583" started-at="2015-12-05T17:09:05Z" finished-at="2015-12-05T17:09:42Z">
+        <test-method status="PASS" signature="i_AddAddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="i_AddAddress" duration-ms="38932" started-at="2015-12-07T16:46:25Z" finished-at="2015-12-07T16:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_AddAddress -->
-        <test-method status="PASS" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="j_modifyaddress" duration-ms="40725" started-at="2015-12-05T17:09:42Z" finished-at="2015-12-05T17:10:23Z">
+        <test-method status="PASS" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@1fbc7afb]" name="j_modifyaddress" duration-ms="1" started-at="2015-12-07T16:47:04Z" finished-at="2015-12-07T16:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- j_modifyaddress -->
-        <test-method status="PASS" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@1fbc7afb]" name="k_deleteAddres" duration-ms="3975" started-at="2015-12-05T17:10:23Z" finished-at="2015-12-05T17:10:26Z">
+        <test-method status="PASS" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@1fbc7afb]" name="k_deleteAddres" duration-ms="4043" started-at="2015-12-07T16:47:04Z" finished-at="2015-12-07T16:47:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- k_deleteAddres -->
+        <test-method status="PASS" signature="l_labels()[pri:0, instance:test.testappandroid@1fbc7afb]" name="l_labels" duration-ms="7000" started-at="2015-12-07T16:47:08Z" finished-at="2015-12-07T16:47:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- l_labels -->
+        <test-method status="FAIL" signature="m_ordertestcases()[pri:0, instance:test.testappandroid@1fbc7afb]" name="m_ordertestcases" duration-ms="11874" started-at="2015-12-07T16:47:15Z" finished-at="2015-12-07T16:47:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Yes] but found [No]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Yes] but found [No]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at allpages.orderitems.callUs(orderitems.java:183)
+	at test.testappandroid.m_ordertestcases(testappandroid.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m_ordertestcases -->
       </class> <!-- test.testappandroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
