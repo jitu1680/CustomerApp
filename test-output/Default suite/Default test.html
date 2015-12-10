@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 09 15:35:52 IST 2015</td>
+<td>Started on:</td><td>Thu Dec 10 12:47:07 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35098 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (346 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,21 +68,19 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.testappandroid.eVerify()'><b>eVerify</b><br>Test class: test.testappandroid</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
+<td title='test.testappandroid.setUp()'><b>setUp</b><br>Test class: test.testappandroid</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 128 milliseconds
 Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
 System info: host: &apos;DEITY-3015A-103&apos;, ip: &apos;10.22.114.198&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -93,21 +91,24 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
-	at io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-	at io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:338)
-	at allpages.General.swipeLeft(General.java:45)
-	at test.testappandroid.eVerify(testappandroid.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:160)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:168)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:69)
+	at test.testappandroid.setUp(testappandroid.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -122,14 +123,12 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace27456748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace27456748'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
+</pre></div><a href='#' onClick='toggleBox("stack-trace7393684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7393684'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 128 milliseconds
 Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
 System info: host: &apos;DEITY-3015A-103&apos;, ip: &apos;10.22.114.198&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -140,21 +139,24 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
-	at io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-	at io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:338)
-	at allpages.General.swipeLeft(General.java:45)
-	at test.testappandroid.eVerify(testappandroid.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:160)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:168)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:69)
+	at test.testappandroid.setUp(testappandroid.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -170,31 +172,71 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>8</td>
-<td>test.testappandroid@1e0f4f</td></tr>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.testappandroid.amen()'><b>amen</b><br>Test class: test.testappandroid</td>
-<td></td>
-<td>7</td>
-<td>test.testappandroid@1e0f4f</td></tr>
-<tr>
-<td title='test.testappandroid.bloginbutton()'><b>bloginbutton</b><br>Test class: test.testappandroid</td>
+<td title='test.testappandroid.a_men()'><b>a_men</b><br>Test class: test.testappandroid</td>
 <td></td>
 <td>0</td>
-<td>test.testappandroid@1e0f4f</td></tr>
+<td>test.testappandroid@3c1e69</td></tr>
 <tr>
-<td title='test.testappandroid.cloginpageitems()'><b>cloginpageitems</b><br>Test class: test.testappandroid</td>
+<td title='test.testappandroid.b_loginbutton()'><b>b_loginbutton</b><br>Test class: test.testappandroid</td>
 <td></td>
-<td>7</td>
-<td>test.testappandroid@1e0f4f</td></tr>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.e_serach()'><b>e_serach</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.f_checkout()'><b>f_checkout</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.g_paymentoption()'><b>g_paymentoption</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.h_paymoney()'><b>h_paymoney</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.i_AddAddress()'><b>i_AddAddress</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.j_modifyaddress()'><b>j_modifyaddress</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.k_deleteAddres()'><b>k_deleteAddres</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.l_labels()'><b>l_labels</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
+<tr>
+<td title='test.testappandroid.m_ordertestcases()'><b>m_ordertestcases</b><br>Test class: test.testappandroid</td>
+<td></td>
+<td>0</td>
+<td>test.testappandroid@3c1e69</td></tr>
 </table><p>
 </body>
 </html>

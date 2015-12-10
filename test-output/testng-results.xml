@@ -1,47 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="11" failed="0" total="11" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35098" started-at="2015-12-09T10:05:52Z" finished-at="2015-12-09T10:06:28Z">
+  <suite name="Default suite" duration-ms="346" started-at="2015-12-10T07:17:07Z" finished-at="2015-12-10T07:17:07Z">
     <groups>
+      <group name="sanity">
+        <method signature="testappandroid.a_men()[pri:0, instance:test.testappandroid@3c1e69]" name="a_men" class="test.testappandroid"/>
+        <method signature="testappandroid.b_loginbutton()[pri:0, instance:test.testappandroid@3c1e69]" name="b_loginbutton" class="test.testappandroid"/>
+        <method signature="testappandroid.e_serach()[pri:0, instance:test.testappandroid@3c1e69]" name="e_serach" class="test.testappandroid"/>
+        <method signature="testappandroid.f_checkout()[pri:0, instance:test.testappandroid@3c1e69]" name="f_checkout" class="test.testappandroid"/>
+        <method signature="testappandroid.h_paymoney()[pri:0, instance:test.testappandroid@3c1e69]" name="h_paymoney" class="test.testappandroid"/>
+      </group> <!-- sanity -->
+      <group name="snity">
+        <method signature="testappandroid.g_paymentoption()[pri:0, instance:test.testappandroid@3c1e69]" name="g_paymentoption" class="test.testappandroid"/>
+      </group> <!-- snity -->
     </groups>
-    <test name="Default test" duration-ms="35098" started-at="2015-12-09T10:05:52Z" finished-at="2015-12-09T10:06:28Z">
+    <test name="Default test" duration-ms="346" started-at="2015-12-10T07:17:07Z" finished-at="2015-12-10T07:17:07Z">
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@1e0f4f]" name="setUp" is-config="true" duration-ms="10426" started-at="2015-12-09T15:35:52Z" finished-at="2015-12-09T15:36:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="amen()[pri:0, instance:test.testappandroid@1e0f4f]" name="amen" duration-ms="7480" started-at="2015-12-09T15:36:03Z" finished-at="2015-12-09T15:36:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amen -->
-        <test-method status="PASS" signature="bloginbutton()[pri:0, instance:test.testappandroid@1e0f4f]" name="bloginbutton" duration-ms="897" started-at="2015-12-09T15:36:10Z" finished-at="2015-12-09T15:36:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bloginbutton -->
-        <test-method status="PASS" signature="cloginpageitems()[pri:0, instance:test.testappandroid@1e0f4f]" name="cloginpageitems" duration-ms="7089" started-at="2015-12-09T15:36:11Z" finished-at="2015-12-09T15:36:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloginpageitems -->
-        <test-method status="FAIL" signature="eVerify()[pri:0, instance:test.testappandroid@1e0f4f]" name="eVerify" duration-ms="8824" started-at="2015-12-09T15:36:18Z" finished-at="2015-12-09T15:36:27Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.testappandroid@3c1e69]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
+              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 128 milliseconds
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652]]>
+Driver info: io.appium.java_client.android.AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 128 milliseconds
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LGH818817f4eaf, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=LGH818817f4eaf}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -52,21 +42,24 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
-	at io.appium.java_client.MultiTouchAction.perform(MultiTouchAction.java:74)
-	at io.appium.java_client.AppiumDriver.tap(AppiumDriver.java:338)
-	at allpages.General.swipeLeft(General.java:45)
-	at test.testappandroid.eVerify(testappandroid.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:160)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:168)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:69)
+	at test.testappandroid.setUp(testappandroid.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -83,10 +76,54 @@ Session ID: 958c62ff-5f50-4966-8ec9-61c73ec79652
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- eVerify -->
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="i_AddAddress()[pri:0, instance:test.testappandroid@3c1e69]" name="i_AddAddress" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_AddAddress -->
+        <test-method status="SKIP" signature="l_labels()[pri:0, instance:test.testappandroid@3c1e69]" name="l_labels" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- l_labels -->
+        <test-method status="SKIP" signature="g_paymentoption()[pri:0, instance:test.testappandroid@3c1e69]" name="g_paymentoption" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_paymentoption -->
+        <test-method status="SKIP" signature="f_checkout()[pri:0, instance:test.testappandroid@3c1e69]" name="f_checkout" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_checkout -->
+        <test-method status="SKIP" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@3c1e69]" name="k_deleteAddres" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- k_deleteAddres -->
+        <test-method status="SKIP" signature="e_serach()[pri:0, instance:test.testappandroid@3c1e69]" name="e_serach" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_serach -->
+        <test-method status="SKIP" signature="h_paymoney()[pri:0, instance:test.testappandroid@3c1e69]" name="h_paymoney" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_paymoney -->
+        <test-method status="SKIP" signature="a_men()[pri:0, instance:test.testappandroid@3c1e69]" name="a_men" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_men -->
+        <test-method status="SKIP" signature="b_loginbutton()[pri:0, instance:test.testappandroid@3c1e69]" name="b_loginbutton" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_loginbutton -->
+        <test-method status="SKIP" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@3c1e69]" name="j_modifyaddress" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- j_modifyaddress -->
+        <test-method status="SKIP" signature="m_ordertestcases()[pri:0, instance:test.testappandroid@3c1e69]" name="m_ordertestcases" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m_ordertestcases -->
       </class> <!-- test.testappandroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -5,8 +5,18 @@
     <classes>
       <class name="test.testappandroid">
         <methods>
+          <include name="a_men"/>
           <include name="setUp"/>
-          <include name="eVerify"/>
+          <include name="f_checkout"/>
+          <include name="i_AddAddress"/>
+          <include name="g_paymentoption"/>
+          <include name="e_serach"/>
+          <include name="k_deleteAddres"/>
+          <include name="l_labels"/>
+          <include name="h_paymoney"/>
+          <include name="j_modifyaddress"/>
+          <include name="m_ordertestcases"/>
+          <include name="b_loginbutton"/>
         </methods>
       </class> <!-- test.testappandroid -->
     </classes>
