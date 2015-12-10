@@ -33,11 +33,11 @@ import junit.framework.Assert;
 
 public class testappandroid {
 	private AndroidDriver<MobileElement> driver;
-//AndroidDriver<WebElement> appiumDriver;
-Login log;
-All_Elements_Nevigationdrawer objlogin;
-VerificationCode verify;
-General gen;
+		//AndroidDriver<WebElement> appiumDriver;
+		Login log;
+		All_Elements_Nevigationdrawer objlogin;
+		VerificationCode verify;
+		General gen;
 
 
 
@@ -51,7 +51,7 @@ public void setUp() throws MalformedURLException{
 	capabilities.setCapability("deviceName","LGH818817f4eaf");
 	capabilities.setCapability("platformName","Android");
  
-   capabilities.setCapability("appPackage", "com.grofers.customerapp");
+	capabilities.setCapability("appPackage", "com.grofers.customerapp");
 // This package name of your app (you can get it from apk info app)
 	capabilities.setCapability("appActivity","com.grofers.customerapp.activities.ActivitySplashScreen"); // This is Launcher activity of your app (you can get it from apk info app)
 //Create RemoteWebDriver instance and connect to the Appium server
@@ -73,7 +73,7 @@ public void setUp() throws MalformedURLException{
 @Test
 public void amen(){
 	System.out.println(" Check for welcome text");
-	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
      WebElement nevi=driver.findElement(objlogin.Nevigation_menu);
      nevi.click();
      WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
