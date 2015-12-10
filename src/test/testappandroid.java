@@ -91,13 +91,12 @@ public void a_men(){
 	//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	gen.c_waithere5();
 	
-     MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
-     System.out.println(!driver.findElements(objlogin.Nevigation_Welcome_Text).isEmpty());
-     nevi.click();
      if(!driver.findElements(objlogin.Nevigation_Welcome_Text).isEmpty()) { 	//Added by Faizan
-     System.out.println("Check if function calls when No Welcome text.."); 		//Added by Faizan	
-     WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
-     System.out.println("welcome text is displayed : " + wel.isDisplayed());	
+    	 MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
+         nevi.click();
+         System.out.println("Check if function calls when No Welcome text.."); 		//Added by Faizan	
+         WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
+         System.out.println("welcome text is displayed : " + wel.isDisplayed());	
      }
 }																				//Added by Faizan
 
@@ -195,18 +194,18 @@ public void b_loginbutton(){
 @Test(groups="sanity")
 public void e_serach()  
       { 
-	   gen.c_waithere5();
-       MobileElement search= driver.findElement(allid.feedsearch);
-       search.tap(1, 200);
-       MobileElement search2 = driver.findElement(allid.search);
-       search2.tap(1, 200);
-       search2.sendKeys("aquafina");
-//key code for search button is 66 on keyboard
-      driver.pressKeyCode(66);
-      MobileElement add = driver.findElement(allid.addbutton_searched);
-      add.tap(1, 100);
-      MobileElement tapcart = driver.findElement(allid.taketocart);
-      tapcart.tap(1, 200);
+		  gen.c_waithere5();
+	      MobileElement search= driver.findElement(allid.feedsearch);
+	      search.tap(1, 200);
+	      MobileElement search2 = driver.findElement(allid.search);
+	      search2.tap(1, 200);
+	      search2.sendKeys("aquafina");
+	    //key code for search button is 66 on keyboard
+	      driver.pressKeyCode(66);
+	      MobileElement add = driver.findElement(allid.addbutton_searched);
+	      add.tap(1, 100);
+	      MobileElement tapcart = driver.findElement(allid.taketocart);
+	      tapcart.tap(1, 200);
     }
 
 
