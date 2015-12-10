@@ -41,42 +41,43 @@ import junit.framework.Assert;
 
 
 public class testappandroid {
-	private AndroidDriver<MobileElement> driver;
-//AndroidDriver<WebElement> appiumDriver;
-Login log;
-All_Elements_Nevigationdrawer objlogin;
-VerificationCode verify;
-General gen;
-Allpage_id allid;
-Addressitems address;
-orderitems orderobj;
+		private AndroidDriver<MobileElement> driver;
+		//AndroidDriver<WebElement> appiumDriver;
+		Login log;
+		All_Elements_Nevigationdrawer objlogin;
+		VerificationCode verify;
+		General gen;
+		Allpage_id allid;
+		Addressitems address;
+		orderitems orderobj;
 
 
 
 @SuppressWarnings("rawtypes")
 @BeforeClass
 public void setUp() throws MalformedURLException{
+
 	//Set up desired capabilities and pass the Android app-activity and app-package to Appium
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	capabilities.setCapability("BROWSER_NAME", "Android");
 	capabilities.setCapability("VERSION", "5.1"); 
-	capabilities.setCapability("deviceName","LGH818817f4eaf");
+	capabilities.setCapability("deviceName","F4AZFG103235");
 	capabilities.setCapability("platformName","Android");
- 
-   capabilities.setCapability("appPackage", "com.grofers.customerapp");
-// This package name of your app (you can get it from apk info app)
-	capabilities.setCapability("appActivity","com.grofers.customerapp.activities.ActivitySplashScreen"); // This is Launcher activity of your app (you can get it from apk info app)
-//Create RemoteWebDriver instance and connect to the Appium server
- //It will launch the Calculator App in Android Device using the configurations specified in Desired Capabilities
-   driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-   //appiumDriver = new AndroidDriver<WebElement> (new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-   objlogin = new All_Elements_Nevigationdrawer();
-   log = new Login ();
-   verify = new VerificationCode();
-   gen = new General(driver,objlogin);
-   allid = new Allpage_id();
-   address = new Addressitems(driver,gen,objlogin);
-   orderobj = new orderitems(driver, objlogin);
+    capabilities.setCapability("appPackage", "com.grofers.customerapp");
+    // This package name of your app (you can get it from apk info app)
+	capabilities.setCapability("appActivity","com.grofers.customerapp.activities.ActivitySplashScreen"); 
+
+	//Create RemoteWebDriver instance and connect to the Appium server
+	//It will launch the Grofers App in Android Device using the configurations specified in Desired Capabilities
+	driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+   
+	objlogin = new All_Elements_Nevigationdrawer();
+	log = new Login ();
+	verify = new VerificationCode();
+	gen = new General(driver,objlogin);
+	allid = new Allpage_id();
+	address = new Addressitems(driver,gen,objlogin);
+	orderobj = new orderitems(driver, objlogin);
  
 }
 
@@ -84,32 +85,34 @@ public void setUp() throws MalformedURLException{
 
 
 
-//Welcome text on nevigation pane.
+//Welcome text on navigation pane
+
 @Test(groups ="sanity")
-public void a_men(){
-	System.out.println(" Check for welcome text");
-	//driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	gen.c_waithere5();
-	
-     if(!driver.findElements(objlogin.Nevigation_Welcome_Text).isEmpty()) { 	//Added by Faizan
-    	 MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
+public void testcase_1(){
+		System.out.println("Test Case 1 Executing....");
+		gen.c_waithere5(); // wait for 5 sec
+		 MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
          nevi.click();
+     if(!driver.findElements(objlogin.Nevigation_Welcome_Text).isEmpty()) { 	//Added by Faizan
+    	
          System.out.println("Check if function calls when No Welcome text.."); 		//Added by Faizan	
          WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
          System.out.println("welcome text is displayed : " + wel.isDisplayed());	
      }
+     System.out.println("Test Case 1 Executed !!!");
 }																				//Added by Faizan
 
 
 
 
 
-//login button and login page opening
+
 @Test(groups = "sanity")
-public void b_loginbutton(){
-	
+public void testcase_2(){
+	System.out.println("Test Case 2 Executing....");
+	//login button and login page opening
 	if(!driver.findElements(objlogin.Nevigation_Login).isEmpty()) 
-	{																			//Added by Faizan
+	{					
 			System.out.println("login button and login page opening");
 			System.out.println("Check if function calls when No Login button..");		//Added by Faizan
 			WebElement loginbutton= driver.findElement(objlogin.Nevigation_Login);
@@ -140,8 +143,8 @@ public void b_loginbutton(){
 		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	
-			//Verification function merged by Faizan
-	
+		  
+		    //Verification function merged by Faizan
 			System.out.println("Verification page function");
 			WebElement title1 = driver.findElement(verify.Verification_titletext);
 			System.out.println("Title text = " +title1.getText());
@@ -183,6 +186,7 @@ public void b_loginbutton(){
 			 
 			
 		}
+	System.out.println("Test Case 2 Executed !!!");
 }
 
 
@@ -192,8 +196,9 @@ public void b_loginbutton(){
 //Search and add item and go to My cart.
 
 @Test(groups="sanity")
-public void e_serach()  
+public void testcase_3()  
       { 
+		System.out.println("Test Case 3 Executing....");
 		  gen.c_waithere5();
 	      MobileElement search= driver.findElement(allid.feedsearch);
 	      search.tap(1, 200);
@@ -206,13 +211,15 @@ public void e_serach()
 	      add.tap(1, 100);
 	      MobileElement tapcart = driver.findElement(allid.taketocart);
 	      tapcart.tap(1, 200);
+	      System.out.println("Test Case 3 Executed !!!");
     }
 
 
 // go to checkout page.
 @Test (groups="sanity")
-public void f_checkout()
+public void testcase_4()
 {
+	System.out.println("Test Case 4 Executing....");
 	System.out.println("click on chekcout");
 	MobileElement tapchekout = driver.findElement(allid.checkoutbutton);
 	tapchekout.tap(1, 200);
@@ -248,12 +255,12 @@ public void f_checkout()
 	String  ProceedtoPaymentText =driver.findElement(allid.proceedtopayment).getText();
 	org.testng.Assert.assertEquals(ProceedtoPaymentText, "Proceed to Payment");
 	
-	
+	System.out.println("Test Case 4 Executed !!!");
 	
 }
 
 // payment option page
-@Test (groups = "snity")
+@Test (groups = "sanity")
 public void g_paymentoption()
 {
 	MobileElement paymentproceed = driver.findElement(allid.proceedtopayment);

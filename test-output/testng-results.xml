@@ -1,129 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="11" failed="0" total="11" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="346" started-at="2015-12-10T07:17:07Z" finished-at="2015-12-10T07:17:07Z">
+  <suite name="Default suite" duration-ms="21373" started-at="2015-12-10T09:50:49Z" finished-at="2015-12-10T09:51:11Z">
     <groups>
       <group name="sanity">
-        <method signature="testappandroid.a_men()[pri:0, instance:test.testappandroid@3c1e69]" name="a_men" class="test.testappandroid"/>
-        <method signature="testappandroid.b_loginbutton()[pri:0, instance:test.testappandroid@3c1e69]" name="b_loginbutton" class="test.testappandroid"/>
-        <method signature="testappandroid.e_serach()[pri:0, instance:test.testappandroid@3c1e69]" name="e_serach" class="test.testappandroid"/>
-        <method signature="testappandroid.f_checkout()[pri:0, instance:test.testappandroid@3c1e69]" name="f_checkout" class="test.testappandroid"/>
-        <method signature="testappandroid.h_paymoney()[pri:0, instance:test.testappandroid@3c1e69]" name="h_paymoney" class="test.testappandroid"/>
+        <method signature="testappandroid.a_menu()[pri:0, instance:test.testappandroid@dca536]" name="a_menu" class="test.testappandroid"/>
       </group> <!-- sanity -->
-      <group name="snity">
-        <method signature="testappandroid.g_paymentoption()[pri:0, instance:test.testappandroid@3c1e69]" name="g_paymentoption" class="test.testappandroid"/>
-      </group> <!-- snity -->
     </groups>
-    <test name="Default test" duration-ms="346" started-at="2015-12-10T07:17:07Z" finished-at="2015-12-10T07:17:07Z">
+    <test name="Default test" duration-ms="21373" started-at="2015-12-10T09:50:49Z" finished-at="2015-12-10T09:51:11Z">
       <class name="test.testappandroid">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:test.testappandroid@3c1e69]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 128 milliseconds
-Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
-System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: io.appium.java_client.android.AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 128 milliseconds
-Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
-System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
-Driver info: io.appium.java_client.android.AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:160)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:168)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:69)
-	at test.testappandroid.setUp(testappandroid.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@dca536]" name="setUp" is-config="true" duration-ms="11936" started-at="2015-12-10T15:20:49Z" finished-at="2015-12-10T15:21:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="i_AddAddress()[pri:0, instance:test.testappandroid@3c1e69]" name="i_AddAddress" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
+        <test-method status="PASS" signature="a_menu()[pri:0, instance:test.testappandroid@dca536]" name="a_menu" duration-ms="9425" started-at="2015-12-10T15:21:01Z" finished-at="2015-12-10T15:21:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- i_AddAddress -->
-        <test-method status="SKIP" signature="l_labels()[pri:0, instance:test.testappandroid@3c1e69]" name="l_labels" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- l_labels -->
-        <test-method status="SKIP" signature="g_paymentoption()[pri:0, instance:test.testappandroid@3c1e69]" name="g_paymentoption" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- g_paymentoption -->
-        <test-method status="SKIP" signature="f_checkout()[pri:0, instance:test.testappandroid@3c1e69]" name="f_checkout" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f_checkout -->
-        <test-method status="SKIP" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@3c1e69]" name="k_deleteAddres" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- k_deleteAddres -->
-        <test-method status="SKIP" signature="e_serach()[pri:0, instance:test.testappandroid@3c1e69]" name="e_serach" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- e_serach -->
-        <test-method status="SKIP" signature="h_paymoney()[pri:0, instance:test.testappandroid@3c1e69]" name="h_paymoney" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- h_paymoney -->
-        <test-method status="SKIP" signature="a_men()[pri:0, instance:test.testappandroid@3c1e69]" name="a_men" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- a_men -->
-        <test-method status="SKIP" signature="b_loginbutton()[pri:0, instance:test.testappandroid@3c1e69]" name="b_loginbutton" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- b_loginbutton -->
-        <test-method status="SKIP" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@3c1e69]" name="j_modifyaddress" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- j_modifyaddress -->
-        <test-method status="SKIP" signature="m_ordertestcases()[pri:0, instance:test.testappandroid@3c1e69]" name="m_ordertestcases" duration-ms="0" started-at="2015-12-10T12:47:07Z" finished-at="2015-12-10T12:47:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m_ordertestcases -->
+        </test-method> <!-- a_menu -->
       </class> <!-- test.testappandroid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
