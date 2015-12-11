@@ -40,16 +40,16 @@ import junit.framework.Assert;
 
 
 
-public class testappandroid {
-		private AndroidDriver<MobileElement> driver;
+public class  testappandroid {
+		public AndroidDriver<MobileElement> driver;
 		//AndroidDriver<WebElement> appiumDriver;
-		Login log;
-		All_Elements_Nevigationdrawer objlogin;
-		VerificationCode verify;
-		General gen;
-		Allpage_id allid;
-		Addressitems address;
-		orderitems orderobj;
+		public Login log;
+		public All_Elements_Nevigationdrawer objlogin;
+		public VerificationCode verify;
+		public General gen;
+		public Allpage_id allid;
+		public Addressitems address;
+		public orderitems orderobj;
 
 
 
@@ -82,32 +82,7 @@ public void setUp() throws MalformedURLException{
 }
 
 
-
-
-
-//Welcome text on navigation pane
-
-@Test(groups ="sanity")
-public void testcase_1(){
-		System.out.println("Test Case 1 Executing....");
-		gen.c_waithere5(); // wait for 5 sec
-		 MobileElement nevi=driver.findElement(objlogin.Nevigation_menu);
-         nevi.click();
-     if(!driver.findElements(objlogin.Nevigation_Welcome_Text).isEmpty()) { 	//Added by Faizan
-    	
-         System.out.println("Check if function calls when No Welcome text.."); 		//Added by Faizan	
-         WebElement wel= driver.findElement(objlogin.Nevigation_Welcome_Text);
-         System.out.println("welcome text is displayed : " + wel.isDisplayed());	
-     }
-     System.out.println("Test Case 1 Executed !!!");
-}																				//Added by Faizan
-
-
-
-
-
-
-@Test(groups = "sanity")
+@Test(groups = "sanity", priority=2)
 public void testcase_2(){
 	System.out.println("Test Case 2 Executing....");
 	//login button and login page opening
@@ -138,7 +113,7 @@ public void testcase_2(){
 		    WebElement enterphone = driver.findElement(log.Login_Enterphoneno);
 		    System.out.println("Text over enterphone number :" +enterphone.getText());
 		    System.out.println("Click the enterphone no ");
-		    enterphone.sendKeys("8826611401");
+		    enterphone.sendKeys(util.Mob_No);
 		    nextbutton.click();
 		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -170,7 +145,7 @@ public void testcase_2(){
 			 WebElement done = driver.findElement(verify.Verification_Donebutton);
 			 System.out.println("Displayed text = " +Enter_Code.getText());
 			 Enter_Code.tap(1, 200);
-			 Enter_Code.sendKeys("9314");
+			 Enter_Code.sendKeys(util.Key);
 			 done.click();
 			 //System.out.println("out clicked");
 			 //gen.c_waithere5();
@@ -195,11 +170,11 @@ public void testcase_2(){
 
 //Search and add item and go to My cart.
 
-@Test(groups="sanity")
+@Test(groups = "sanity", priority=3)
 public void testcase_3()  
       { 
 		System.out.println("Test Case 3 Executing....");
-		  gen.c_waithere5();
+		  gen.b_waithere20();
 	      MobileElement search= driver.findElement(allid.feedsearch);
 	      search.tap(1, 200);
 	      MobileElement search2 = driver.findElement(allid.search);
@@ -216,7 +191,7 @@ public void testcase_3()
 
 
 // go to checkout page.
-@Test (groups="sanity")
+@Test (groups = "sanity", priority=4)
 public void testcase_4()
 {
 	System.out.println("Test Case 4 Executing....");
@@ -259,8 +234,8 @@ public void testcase_4()
 	
 }
 
-// payment option page
-@Test (groups = "sanity")
+// payment option page -----------BLOCKED FOR NOW---------------
+/*@Test (priority=5)
 public void g_paymentoption()
 {
 	MobileElement paymentproceed = driver.findElement(allid.proceedtopayment);
@@ -270,7 +245,7 @@ public void g_paymentoption()
 }
 
 //paying amount
-@Test (groups ="sanity")
+@Test (priority=6)
 public void h_paymoney()
 {
 	driver.scrollTo("Cash on Delivery");
@@ -281,18 +256,18 @@ public void h_paymoney()
 	gen.b_waithere20();
 	MobileElement continueshopping = driver.findElement(allid.continueshopping_button);
 	continueshopping.tap(1, 200);
-}
+}*/
 
 
 // Adding address when already have address.
-@Test
+@Test (groups = "sanity", priority=5)
 public void i_AddAddress()
 {
 address.Newaddress_addision();	
 }
 
 //Modifying an address
-@Test
+@Test (groups = "sanity", priority=6)
 public void j_modifyaddress()
 {
 	
@@ -300,14 +275,14 @@ public void j_modifyaddress()
 }
 //deleting an address
 
-@Test
+@Test (groups = "sanity", priority=7)
 public void k_deleteAddres()
 {
 	address.Address_delete();
 }
 
 // label assertions and going back
-@Test
+@Test (groups = "sanity", priority=8)
 public void l_labels()
 {
 address.click_addAddress();
@@ -318,7 +293,7 @@ address.go_back();
 }
 
 //Order status
-@Test 
+@Test  (groups = "sanity", priority=9)
 public void m_ordertestcases()
 {
 	orderobj.openOrder();
@@ -332,14 +307,11 @@ public void m_ordertestcases()
 
 
 
-
-
-
 //@AfterTest
 //public void tearDown() {
 //    if (driver != null) {
 //        driver.quit();
 //    }
 //
-//}
+//}*/
 }
