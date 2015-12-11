@@ -5,16 +5,15 @@ import java.util.function.ObjLongConsumer;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import nevigationdrawer.All_Elements_Nevigationdrawer;
+import navigationdrawer.All_Elements_Navigationdrawer;
 
 public class orderitems {
 	AndroidDriver<MobileElement> driver;
-	All_Elements_Nevigationdrawer objlogin;
+	All_Elements_Navigationdrawer objlogin;
 	
-	public orderitems(AndroidDriver<MobileElement> driver, All_Elements_Nevigationdrawer objlogin) {
+	public orderitems(AndroidDriver<MobileElement> driver, All_Elements_Navigationdrawer objlogin) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
 		this.objlogin = objlogin;

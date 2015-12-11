@@ -31,7 +31,7 @@ import allpages.Allpage_id;
 import allpages.General;
 import allpages.VerificationCode;
 import allpages.orderitems;
-import nevigationdrawer.*;
+import navigationdrawer.*;
 
 
 
@@ -44,7 +44,7 @@ public class  testappandroid {
 		public AndroidDriver<MobileElement> driver;
 		//AndroidDriver<WebElement> appiumDriver;
 		public Login log;
-		public All_Elements_Nevigationdrawer objlogin;
+		public All_Elements_Navigationdrawer objlogin;
 		public VerificationCode verify;
 		public General gen;
 		public Allpage_id allid;
@@ -71,7 +71,7 @@ public void setUp() throws MalformedURLException{
 	//It will launch the Grofers App in Android Device using the configurations specified in Desired Capabilities
 	driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
    
-	objlogin = new All_Elements_Nevigationdrawer();
+	objlogin = new All_Elements_Navigationdrawer();
 	log = new Login ();
 	verify = new VerificationCode();
 	gen = new General(driver,objlogin);
@@ -114,7 +114,7 @@ public void h_paymoney()
 	gen.b_waithere20();
 	MobileElement continueshopping = driver.findElement(allid.continueshopping_button);
 	continueshopping.tap(1, 200);
-}*/
+}
 
 
 // Adding address when already have address.

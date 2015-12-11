@@ -3,6 +3,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 //import nevigationdrawer.objlogin;
 
+
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -12,7 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
-import nevigationdrawer.*;
+import navigationdrawer.*;
 
 
 
@@ -21,9 +22,9 @@ public class General
 
 	@SuppressWarnings("rawtypes")
 	AndroidDriver driver;
-	All_Elements_Nevigationdrawer objlogin;
+	All_Elements_Navigationdrawer objlogin;
 	
-   public General (AndroidDriver<MobileElement> driver, All_Elements_Nevigationdrawer objlogin){
+   public General (AndroidDriver<MobileElement> driver, All_Elements_Navigationdrawer objlogin){
     this.driver = driver;	
     this.objlogin=objlogin;
    }

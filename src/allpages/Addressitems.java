@@ -7,16 +7,16 @@ import org.testng.asserts.Assertion;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 //import junit.framework.Assert;
-import nevigationdrawer.All_Elements_Nevigationdrawer;
+import navigationdrawer.All_Elements_Navigationdrawer;
 
 public class Addressitems {
 	
 	
 	AndroidDriver<MobileElement> driver;
 	General gen;
-	All_Elements_Nevigationdrawer objlogin;
+	All_Elements_Navigationdrawer objlogin;
 	
-	public Addressitems(AndroidDriver<MobileElement> driver, General gen, All_Elements_Nevigationdrawer objlogin) {
+	public Addressitems(AndroidDriver<MobileElement> driver, General gen, All_Elements_Navigationdrawer objlogin) {
 		// TODO Auto-generated constructor stub
 		this.driver = driver;
 		this.gen = gen;
