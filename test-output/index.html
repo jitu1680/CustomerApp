@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Administrator\workspace\GrofersAndroidapp\testng.xml</span>
+                    <span>C:\Users\Faizan\git\CustomerApp\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,26 +90,71 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">11 methods,  11 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="d_opennavigationPane">d_opennavigationPane</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="swipeLeft">swipeLeft</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="swipeRight">swipeRight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="launch_feature.first_launch" hash-for-method="testcase_1_1">testcase_1_1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="launch_feature.first_launch" hash-for-method="testcase_1_2">testcase_1_2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="my_information_feature.login" hash-for-method="testcase_2">testcase_2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cart_feature.my_cart" hash-for-method="testcase_3">testcase_3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="cart_feature.checkout" hash-for-method="testcase_4">testcase_4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="waithere10">waithere10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="waithere20">waithere20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="allpages.General" hash-for-method="waithere5">waithere5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,9 +166,89 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">my_information_feature.login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase_2">
+                  </a> <!-- testcase_2 -->
+                  <span class="method-name">testcase_2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">allpages.General</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="d_opennavigationPane">
+                  </a> <!-- d_opennavigationPane -->
+                  <span class="method-name">d_opennavigationPane</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="swipeLeft">
+                  </a> <!-- swipeLeft -->
+                  <span class="method-name">swipeLeft</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="swipeRight">
+                  </a> <!-- swipeRight -->
+                  <span class="method-name">swipeRight</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="waithere10">
+                  </a> <!-- waithere10 -->
+                  <span class="method-name">waithere10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="waithere20">
+                  </a> <!-- waithere20 -->
+                  <span class="method-name">waithere20</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="waithere5">
+                  </a> <!-- waithere5 -->
+                  <span class="method-name">waithere5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">cart_feature.checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase_4">
+                  </a> <!-- testcase_4 -->
+                  <span class="method-name">testcase_4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">launch_feature.first_launch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -132,11 +257,6 @@
                   <a name="testcase_1_1">
                   </a> <!-- testcase_1_1 -->
                   <span class="method-name">testcase_1_1</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at allpages.General.waithere10(General.java:73)
-	at launch_feature.first_launch.testcase_1_1(first_launch.java:32)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -144,29 +264,43 @@
                   <a name="testcase_1_2">
                   </a> <!-- testcase_1_2 -->
                   <span class="method-name">testcase_1_2</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at allpages.General.waithere5(General.java:80)
-	at launch_feature.first_launch.testcase_1_2(first_launch.java:54)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">cart_feature.my_cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcase_3">
+                  </a> <!-- testcase_3 -->
+                  <span class="method-name">testcase_3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\workspace\GrofersAndroidapp\testng.xml</span>
+            <span class="header-content">C:\Users\Faizan\git\CustomerApp\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.testappandroid&quot;/&gt;
       &lt;class name=&quot;launch_feature.first_launch&quot;/&gt;
+      &lt;class name=&quot;my_information_feature.login&quot;/&gt;
+      &lt;class name=&quot;cart_feature.my_cart&quot;/&gt;
+      &lt;class name=&quot;cart_feature.checkout&quot;/&gt;
+      &lt;class name=&quot;allpages.General&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -180,7 +314,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,6 +335,18 @@
                 <span class="method-in-group-name">testcase_1_2</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testcase_2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testcase_3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testcase_4</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -218,20 +364,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testcase_1_1')
-data.setCell(0, 2, 'launch_feature.first_launch')
-data.setCell(0, 3, 15);
+data.setCell(0, 1, 'd_opennavigationPane')
+data.setCell(0, 2, 'allpages.General')
+data.setCell(0, 3, 21);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testcase_1_2')
-data.setCell(1, 2, 'launch_feature.first_launch')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'waithere20')
+data.setCell(1, 2, 'allpages.General')
+data.setCell(1, 3, 11);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'waithere10')
+data.setCell(2, 2, 'allpages.General')
+data.setCell(2, 3, 10);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testcase_1_2')
+data.setCell(3, 2, 'launch_feature.first_launch')
+data.setCell(3, 3, 5);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testcase_2')
+data.setCell(4, 2, 'my_information_feature.login')
+data.setCell(4, 3, 3);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testcase_4')
+data.setCell(5, 2, 'cart_feature.checkout')
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'swipeLeft')
+data.setCell(6, 2, 'allpages.General')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testcase_1_1')
+data.setCell(7, 2, 'launch_feature.first_launch')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'swipeRight')
+data.setCell(8, 2, 'allpages.General')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testcase_3')
+data.setCell(9, 2, 'cart_feature.my_cart')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'waithere5')
+data.setCell(10, 2, 'allpages.General')
+data.setCell(10, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 ms</span>
+              <span class="suite-total-time">Total running time: 60 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,9 +428,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my_information_feature.login</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launch_app</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">cart_feature.checkout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launch_app</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">launch_feature.first_launch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launch_app</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">cart_feature.my_cart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launch_app</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -257,22 +467,77 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">launch_feature.first_launch</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
+              <div class="chronological-class-name">test.testappandroid</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">launch_app</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">launch_feature.first_launch</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">testcase_1_1</span>
-                <span class="method-start">16 ms</span>
+                <span class="method-start">8621 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cart_feature.checkout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcase_4</span>
+                <span class="method-start">8633 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my_information_feature.login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcase_2</span>
+                <span class="method-start">8644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">allpages.General</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">d_opennavigationPane</span>
+                <span class="method-start">8647 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">launch_feature.first_launch</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcase_1_2</span>
+                <span class="method-start">8656 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cart_feature.my_cart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testcase_3</span>
+                <span class="method-start">8662 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">allpages.General</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">swipeLeft</span>
+                <span class="method-start">8670 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testcase_1_2</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">swipeRight</span>
+                <span class="method-start">8673 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">waithere10</span>
+                <span class="method-start">8677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">waithere20</span>
+                <span class="method-start">8688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">waithere5</span>
+                <span class="method-start">8701 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
