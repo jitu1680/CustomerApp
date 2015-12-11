@@ -12,15 +12,16 @@
       <class name="cart_feature.my_cart">
         <methods>
           <include name="setUp"/>
+          <include name="testcase_3"/>
         </methods>
       </class> <!-- cart_feature.my_cart -->
       <class name="allpages.General">
         <methods>
-          <include name="a_swipeLeft"/>
           <include name="d_opennavigationPane"/>
           <include name="waithere5"/>
           <include name="waithere10"/>
-          <include name="a_swipeRight"/>
+          <include name="swipeLeft"/>
+          <include name="swipeRight"/>
           <include name="waithere20"/>
         </methods>
       </class> <!-- allpages.General -->
@@ -32,6 +33,7 @@
       <class name="cart_feature.checkout">
         <methods>
           <include name="setUp"/>
+          <include name="testcase_4"/>
         </methods>
       </class> <!-- cart_feature.checkout -->
     </classes>

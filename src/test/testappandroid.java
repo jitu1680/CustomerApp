@@ -34,6 +34,7 @@ import allpages.VerificationCode;
 import allpages.orderitems;
 import navigationdrawer.*;
 import junit.framework.Assert;
+import locality_feature.test_location;
 
 public class  testappandroid {
 		public static AndroidDriver<MobileElement> driver;
@@ -45,6 +46,7 @@ public class  testappandroid {
 		public Allpage_id allid;
 		public Addressitems address;
 		public orderitems orderobj;
+		public test_location locality;
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		
@@ -80,6 +82,7 @@ public void setUp() throws MalformedURLException{
 	allid = new Allpage_id();
 	address = new Addressitems(driver,gen,objlogin);
 	orderobj = new orderitems(driver, objlogin);
+	locality = new test_location(driver, objlogin);
 }
 
 
