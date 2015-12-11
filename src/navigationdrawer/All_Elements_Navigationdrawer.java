@@ -4,6 +4,11 @@ import org.openqa.selenium.By;
 
 public class All_Elements_Navigationdrawer {
 
+ public By Navigation_First_Launch_Image = By.id("com.grofers.customerapp:id/on_boarding_background");
+ public By Navigation_Lets_Get_Started_BTN = By.id("com.grofers.customerapp:id/button_lets_get_started");
+ public By Navigation_Pick_Locality_BTN = By.id("com.grofers.customerapp:id/choose_locality");
+ public By Navigation_Pick_Locality_Field = By.id("com.grofers.customerapp:id/search_edittext");
+ public By Navigation_Pick_Locality_Opt = By.id("com.grofers.customerapp:id/locality_name");
  public By Nevigation_Welcome_Text = By.id("com.grofers.customerapp:id/welcome_layout");
  public By Nevigation_User_current_location = By.id("com.grofers.customerapp:id/user_current_locality");
  public By Nevigation_My_info = By.className("android.widget.TextView");

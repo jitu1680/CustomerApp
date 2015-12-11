@@ -62,7 +62,7 @@ public class Addressitems {
 // Add new address
 public void Newaddress_addision()
 {
-  gen.b_waithere20();
+  gen.waithere20();
   //gen.d_opennevigationPane();
   MobileElement Address = driver.findElement(objlogin.Nevigation_My_Address);
   Address.tap(1, 200);
@@ -87,7 +87,7 @@ public void Newaddress_addision()
 // Modify existing address
 public void Address_modification()
 {
-	gen.b_waithere20();
+	gen.waithere20();
 	MobileElement modifyoption = driver.findElement(Address_option_button);
 	modifyoption.tap(1, 200);
 	System.out.println("Address option button clicked");
@@ -114,7 +114,7 @@ public void Address_modification()
 //Delete an address
 public void Address_delete()
 {
-	gen.b_waithere20();
+	gen.waithere20();
 	MobileElement modifyoption = driver.findElement(Address_option_button);
 	modifyoption.tap(1, 200);
 	MobileElement delete = driver.findElement(Address_delete_button);

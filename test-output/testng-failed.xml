@@ -18,8 +18,10 @@
         <methods>
           <include name="a_swipeLeft"/>
           <include name="d_opennavigationPane"/>
-          <include name="c_waithere5"/>
-          <include name="b_waithere20"/>
+          <include name="waithere5"/>
+          <include name="waithere10"/>
+          <include name="a_swipeRight"/>
+          <include name="waithere20"/>
         </methods>
       </class> <!-- allpages.General -->
       <class name="my_information_feature.login">

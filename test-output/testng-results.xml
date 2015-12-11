@@ -1,43 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="8" passed="4">
+<testng-results skipped="0" failed="6" total="11" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="56675" started-at="2015-12-11T09:28:04Z" finished-at="2015-12-11T09:29:01Z">
+  <suite name="Suite" duration-ms="82492" started-at="2015-12-11T10:35:53Z" finished-at="2015-12-11T10:37:15Z">
     <groups>
       <group name="sanity">
         <method signature="checkout.testcase_4()[pri:0, instance:cart_feature.checkout@da1055]" name="testcase_4" class="cart_feature.checkout"/>
-        <method signature="first_launch.testcase_1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1" class="launch_feature.first_launch"/>
+        <method signature="first_launch.testcase_1_1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1_1" class="launch_feature.first_launch"/>
+        <method signature="first_launch.testcase_1_2()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1_2" class="launch_feature.first_launch"/>
         <method signature="login.testcase_2()[pri:0, instance:my_information_feature.login@8bc3d5]" name="testcase_2" class="my_information_feature.login"/>
         <method signature="my_cart.testcase_3()[pri:0, instance:cart_feature.my_cart@fb434]" name="testcase_3" class="cart_feature.my_cart"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="56675" started-at="2015-12-11T09:28:04Z" finished-at="2015-12-11T09:29:01Z">
+    <test name="Test" duration-ms="82492" started-at="2015-12-11T10:35:53Z" finished-at="2015-12-11T10:37:15Z">
       <class name="launch_feature.first_launch">
-        <test-method status="PASS" signature="setUp1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="setUp1" is-config="true" duration-ms="6311" started-at="2015-12-11T14:57:58Z" finished-at="2015-12-11T14:58:04Z">
+        <test-method status="PASS" signature="setUp1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="setUp1" is-config="true" duration-ms="8692" started-at="2015-12-11T16:05:44Z" finished-at="2015-12-11T16:05:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp1 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="setUp" is-config="true" duration-ms="16" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="setUp" is-config="true" duration-ms="16" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testcase_1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1" duration-ms="7999" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:12Z">
+        <test-method status="PASS" signature="testcase_1_1()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1_1" duration-ms="24665" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:06:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase_1 -->
+        </test-method> <!-- testcase_1_1 -->
+        <test-method status="PASS" signature="testcase_1_2()[pri:0, instance:launch_feature.first_launch@1b64c45]" name="testcase_1_2" duration-ms="8086" started-at="2015-12-11T16:06:17Z" finished-at="2015-12-11T16:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_1_2 -->
       </class> <!-- launch_feature.first_launch -->
       <class name="cart_feature.checkout">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cart_feature.checkout@da1055]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T14:58:56Z" finished-at="2015-12-11T14:58:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testcase_4()[pri:0, instance:cart_feature.checkout@da1055]" name="testcase_4" duration-ms="4984" started-at="2015-12-11T14:58:56Z" finished-at="2015-12-11T14:59:01Z">
+        <test-method status="PASS" signature="testcase_4()[pri:0, instance:cart_feature.checkout@da1055]" name="testcase_4" duration-ms="4788" started-at="2015-12-11T16:07:10Z" finished-at="2015-12-11T16:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_4 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cart_feature.checkout@da1055]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T16:07:10Z" finished-at="2015-12-11T16:07:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- cart_feature.checkout -->
       <class name="allpages.General">
-        <test-method status="FAIL" signature="a_swipeLeft()[pri:0, instance:null]" name="a_swipeLeft" duration-ms="0" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:04Z">
+        <test-method status="FAIL" signature="waithere20()[pri:0, instance:null]" name="waithere20" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can't invoke public void allpages.General.waithere20(): either make it static or add a no-args constructor to your class]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can't invoke public void allpages.General.waithere20(): either make it static or add a no-args constructor to your class
+	at org.testng.internal.Utils.checkInstanceOrStatic(Utils.java:795)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:40)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waithere20 -->
+        <test-method status="FAIL" signature="a_swipeLeft()[pri:0, instance:null]" name="a_swipeLeft" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -73,43 +114,7 @@ Can't invoke public void allpages.General.a_swipeLeft(): either make it static o
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_swipeLeft -->
-        <test-method status="FAIL" signature="c_waithere5()[pri:0, instance:null]" name="c_waithere5" duration-ms="0" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:04Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can't invoke public void allpages.General.c_waithere5(): either make it static or add a no-args constructor to your class]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can't invoke public void allpages.General.c_waithere5(): either make it static or add a no-args constructor to your class
-	at org.testng.internal.Utils.checkInstanceOrStatic(Utils.java:795)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:40)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- c_waithere5 -->
-        <test-method status="FAIL" signature="d_opennavigationPane()[pri:0, instance:null]" name="d_opennavigationPane" duration-ms="0" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:04Z">
+        <test-method status="FAIL" signature="d_opennavigationPane()[pri:0, instance:null]" name="d_opennavigationPane" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -145,15 +150,15 @@ Can't invoke public void allpages.General.d_opennavigationPane(): either make it
           <reporter-output>
           </reporter-output>
         </test-method> <!-- d_opennavigationPane -->
-        <test-method status="FAIL" signature="b_waithere20()[pri:0, instance:null]" name="b_waithere20" duration-ms="0" started-at="2015-12-11T14:58:04Z" finished-at="2015-12-11T14:58:04Z">
+        <test-method status="FAIL" signature="waithere10()[pri:0, instance:null]" name="waithere10" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Can't invoke public void allpages.General.b_waithere20(): either make it static or add a no-args constructor to your class]]>
+Can't invoke public void allpages.General.waithere10(): either make it static or add a no-args constructor to your class]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Can't invoke public void allpages.General.b_waithere20(): either make it static or add a no-args constructor to your class
+Can't invoke public void allpages.General.waithere10(): either make it static or add a no-args constructor to your class
 	at org.testng.internal.Utils.checkInstanceOrStatic(Utils.java:795)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:40)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
@@ -180,24 +185,96 @@ Can't invoke public void allpages.General.b_waithere20(): either make it static 
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- b_waithere20 -->
+        </test-method> <!-- waithere10 -->
+        <test-method status="FAIL" signature="waithere5()[pri:0, instance:null]" name="waithere5" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can't invoke public void allpages.General.waithere5(): either make it static or add a no-args constructor to your class]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can't invoke public void allpages.General.waithere5(): either make it static or add a no-args constructor to your class
+	at org.testng.internal.Utils.checkInstanceOrStatic(Utils.java:795)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:40)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waithere5 -->
+        <test-method status="FAIL" signature="a_swipeRight()[pri:0, instance:null]" name="a_swipeRight" duration-ms="0" started-at="2015-12-11T16:05:53Z" finished-at="2015-12-11T16:05:53Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can't invoke public void allpages.General.a_swipeRight(): either make it static or add a no-args constructor to your class]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can't invoke public void allpages.General.a_swipeRight(): either make it static or add a no-args constructor to your class
+	at org.testng.internal.Utils.checkInstanceOrStatic(Utils.java:795)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:40)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_swipeRight -->
       </class> <!-- allpages.General -->
       <class name="my_information_feature.login">
-        <test-method status="PASS" signature="testcase_2()[pri:0, instance:my_information_feature.login@8bc3d5]" name="testcase_2" duration-ms="28520" started-at="2015-12-11T14:58:12Z" finished-at="2015-12-11T14:58:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:my_information_feature.login@8bc3d5]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T16:06:25Z" finished-at="2015-12-11T16:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testcase_2()[pri:0, instance:my_information_feature.login@8bc3d5]" name="testcase_2" duration-ms="29032" started-at="2015-12-11T16:06:25Z" finished-at="2015-12-11T16:06:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:my_information_feature.login@8bc3d5]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T14:58:12Z" finished-at="2015-12-11T14:58:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
       </class> <!-- my_information_feature.login -->
       <class name="cart_feature.my_cart">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cart_feature.my_cart@fb434]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T14:58:41Z" finished-at="2015-12-11T14:58:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cart_feature.my_cart@fb434]" name="setUp" is-config="true" duration-ms="0" started-at="2015-12-11T16:06:54Z" finished-at="2015-12-11T16:06:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testcase_3()[pri:0, instance:cart_feature.my_cart@fb434]" name="testcase_3" duration-ms="15156" started-at="2015-12-11T14:58:41Z" finished-at="2015-12-11T14:58:56Z">
+        <test-method status="PASS" signature="testcase_3()[pri:0, instance:cart_feature.my_cart@fb434]" name="testcase_3" duration-ms="15905" started-at="2015-12-11T16:06:54Z" finished-at="2015-12-11T16:07:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_3 -->
