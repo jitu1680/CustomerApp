@@ -63,7 +63,7 @@ public class Addressitems {
 public void Newaddress_addision()
 {
   gen.b_waithere20();
-  gen.d_opennevigationPane();
+  //gen.d_opennevigationPane();
   MobileElement Address = driver.findElement(objlogin.Nevigation_My_Address);
   Address.tap(1, 200);
   MobileElement Address_add = driver.findElement(Add_address);

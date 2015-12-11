@@ -32,7 +32,6 @@ public class General
    
    
    
-   
    //Swipe left
 @Test   
 public void a_swipeLeft()
@@ -65,12 +64,11 @@ public void c_waithere5()
 
 //Opening nevigation page.
 @Test
-public void d_opennevigationPane(){
+public void d_opennavigationPane(){
 	 WebElement nevi= driver.findElement(objlogin.Nevigation_menu);
 	 nevi.click();
 		 
  }
-
 
 }
 
