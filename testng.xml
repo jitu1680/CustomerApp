@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <test name="Test">
+    <classes>
+      <class name="test.testappandroid"/>
+      <class name="launch_feature.first_launch"/>
+      <class name="my_information_feature.login"/>
+      <class name="cart_feature.my_cart"/>
+      <class name="cart_feature.checkout"/>
+      <class name="allpages.General"/>
+    </classes> 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

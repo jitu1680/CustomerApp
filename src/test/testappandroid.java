@@ -35,6 +35,7 @@ import allpages.orderitems;
 import navigationdrawer.*;
 import junit.framework.Assert;
 import locality_feature.test_location;
+import basic_actions.basic_actions;
 
 public class  testappandroid {
 		public static AndroidDriver<MobileElement> driver;
@@ -47,22 +48,8 @@ public class  testappandroid {
 		public Addressitems address;
 		public orderitems orderobj;
 		public test_location locality;
+		public basic_actions basic_actions;
 		
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		
-
-@BeforeSuite
-public void setUp1() throws MalformedURLException{
-	System.out.println("Setup1 called....");
-	capabilities.setCapability("BROWSER_NAME", "Android");
-	capabilities.setCapability("VERSION", "5.1"); 
-	capabilities.setCapability("deviceName","F4AZFG103235");
-	capabilities.setCapability("platformName","Android");
-    capabilities.setCapability("appPackage", "com.grofers.customerapp");
-    // This package name of your app (you can get it from apk info app)
-	capabilities.setCapability("appActivity","com.grofers.customerapp.activities.ActivitySplashScreen"); 
-	driver =  new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-}
 
 @BeforeClass
 public void setUp() throws MalformedURLException{
@@ -83,6 +70,7 @@ public void setUp() throws MalformedURLException{
 	address = new Addressitems(driver,gen,objlogin);
 	orderobj = new orderitems(driver, objlogin);
 	locality = new test_location(driver, objlogin);
+	basic_actions = new basic_actions(driver);
 }
 
 

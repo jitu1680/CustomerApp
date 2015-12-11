@@ -1,24 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="2" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="31" started-at="2015-12-11T11:43:05Z" finished-at="2015-12-11T11:43:05Z">
-    <groups>
-      <group name="sanity">
-        <method signature="first_launch.testcase_1_1()[pri:0, instance:launch_feature.first_launch@afb23c]" name="testcase_1_1" class="launch_feature.first_launch"/>
-        <method signature="first_launch.testcase_1_2()[pri:0, instance:launch_feature.first_launch@afb23c]" name="testcase_1_2" class="launch_feature.first_launch"/>
-      </group> <!-- sanity -->
-    </groups>
-    <test name="Test" duration-ms="31" started-at="2015-12-11T11:43:05Z" finished-at="2015-12-11T11:43:05Z">
-      <class name="launch_feature.first_launch">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:launch_feature.first_launch@afb23c]" name="setUp" is-config="true" duration-ms="16" started-at="2015-12-11T17:13:05Z" finished-at="2015-12-11T17:13:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testcase_1_1()[pri:0, instance:launch_feature.first_launch@afb23c]" name="testcase_1_1" duration-ms="15" started-at="2015-12-11T17:13:05Z" finished-at="2015-12-11T17:13:05Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 11 17:13:05 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (31 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='launch_feature.first_launch.testcase_1_1()'><b>testcase_1_1</b><br>Test class: launch_feature.first_launch</td>
+<td><div><pre>java.lang.NullPointerException
+	at allpages.General.waithere10(General.java:73)
+	at launch_feature.first_launch.testcase_1_1(first_launch.java:32)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22260990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22260990'><pre>java.lang.NullPointerException
 	at allpages.General.waithere10(General.java:73)
 	at launch_feature.first_launch.testcase_1_1(first_launch.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -45,16 +107,16 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase_1_1 -->
-        <test-method status="FAIL" signature="testcase_1_2()[pri:0, instance:launch_feature.first_launch@afb23c]" name="testcase_1_2" duration-ms="0" started-at="2015-12-11T17:13:05Z" finished-at="2015-12-11T17:13:05Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>launch_feature.first_launch@afb23c</td></tr>
+<tr>
+<td title='launch_feature.first_launch.testcase_1_2()'><b>testcase_1_2</b><br>Test class: launch_feature.first_launch</td>
+<td><div><pre>java.lang.NullPointerException
+	at allpages.General.waithere5(General.java:80)
+	at launch_feature.first_launch.testcase_1_2(first_launch.java:54)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23088921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23088921'><pre>java.lang.NullPointerException
 	at allpages.General.waithere5(General.java:80)
 	at launch_feature.first_launch.testcase_1_2(first_launch.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -81,13 +143,9 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase_1_2 -->
-      </class> <!-- launch_feature.first_launch -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>0</td>
+<td>launch_feature.first_launch@afb23c</td></tr>
+</table><p>
+</body>
+</html>
