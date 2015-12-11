@@ -32,13 +32,7 @@ import allpages.General;
 import allpages.VerificationCode;
 import allpages.orderitems;
 import navigationdrawer.*;
-
-
-
 import junit.framework.Assert;
-
-
-
 
 public class  testappandroid {
 		public AndroidDriver<MobileElement> driver;
@@ -83,7 +77,10 @@ public void setUp() throws MalformedURLException{
 
 
 
-
+@Test(groups = "sanity", priority=1)
+public void testcase_2(){
+	System.out.println("TestAppAndroid Hit....");
+}
 
 
 
