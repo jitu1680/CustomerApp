@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="11" total="13" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="91427" started-at="2015-12-10T12:33:12Z" finished-at="2015-12-10T12:34:44Z">
+  <suite name="Suite" duration-ms="130994" started-at="2015-12-11T05:14:22Z" finished-at="2015-12-11T05:16:33Z">
     <groups>
       <group name="sanity">
-        <method signature="first_launch.testcase_1()[pri:0, instance:launch_feature.first_launch@cd8737]" name="testcase_1" class="launch_feature.first_launch"/>
-        <method signature="testappandroid.i_AddAddress()[pri:0, instance:test.testappandroid@16e8792]" name="i_AddAddress" class="test.testappandroid"/>
-        <method signature="testappandroid.j_modifyaddress()[pri:0, instance:test.testappandroid@16e8792]" name="j_modifyaddress" class="test.testappandroid"/>
-        <method signature="testappandroid.k_deleteAddres()[pri:0, instance:test.testappandroid@16e8792]" name="k_deleteAddres" class="test.testappandroid"/>
-        <method signature="testappandroid.l_labels()[pri:0, instance:test.testappandroid@16e8792]" name="l_labels" class="test.testappandroid"/>
-        <method signature="testappandroid.m_ordertestcases()[pri:0, instance:test.testappandroid@16e8792]" name="m_ordertestcases" class="test.testappandroid"/>
-        <method signature="testappandroid.testcase_2()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_2" class="test.testappandroid"/>
-        <method signature="testappandroid.testcase_3()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_3" class="test.testappandroid"/>
-        <method signature="testappandroid.testcase_4()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_4" class="test.testappandroid"/>
+        <method signature="first_launch.testcase_1()[pri:0, instance:launch_feature.first_launch@124753a]" name="testcase_1" class="launch_feature.first_launch"/>
+        <method signature="testappandroid.i_AddAddress()[pri:0, instance:test.testappandroid@df4efb]" name="i_AddAddress" class="test.testappandroid"/>
+        <method signature="testappandroid.j_modifyaddress()[pri:0, instance:test.testappandroid@df4efb]" name="j_modifyaddress" class="test.testappandroid"/>
+        <method signature="testappandroid.k_deleteAddres()[pri:0, instance:test.testappandroid@df4efb]" name="k_deleteAddres" class="test.testappandroid"/>
+        <method signature="testappandroid.l_labels()[pri:0, instance:test.testappandroid@df4efb]" name="l_labels" class="test.testappandroid"/>
+        <method signature="testappandroid.m_ordertestcases()[pri:0, instance:test.testappandroid@df4efb]" name="m_ordertestcases" class="test.testappandroid"/>
+        <method signature="testappandroid.testcase_2()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_2" class="test.testappandroid"/>
+        <method signature="testappandroid.testcase_3()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_3" class="test.testappandroid"/>
+        <method signature="testappandroid.testcase_4()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_4" class="test.testappandroid"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="91427" started-at="2015-12-10T12:33:12Z" finished-at="2015-12-10T12:34:44Z">
+    <test name="Test" duration-ms="130994" started-at="2015-12-11T05:14:22Z" finished-at="2015-12-11T05:16:33Z">
       <class name="launch_feature.first_launch">
-        <test-method status="FAIL" signature="testcase_1()[pri:0, instance:launch_feature.first_launch@cd8737]" name="testcase_1" duration-ms="0" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:12Z">
+        <test-method status="FAIL" signature="testcase_1()[pri:0, instance:launch_feature.first_launch@124753a]" name="testcase_1" duration-ms="0" started-at="2015-12-11T10:45:10Z" finished-at="2015-12-11T10:45:10Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -55,7 +55,7 @@
         </test-method> <!-- testcase_1 -->
       </class> <!-- launch_feature.first_launch -->
       <class name="allpages.General">
-        <test-method status="FAIL" signature="a_swipeLeft()[pri:0, instance:null]" name="a_swipeLeft" duration-ms="20" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:12Z">
+        <test-method status="FAIL" signature="a_swipeLeft()[pri:0, instance:null]" name="a_swipeLeft" duration-ms="10" started-at="2015-12-11T10:44:22Z" finished-at="2015-12-11T10:44:22Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -91,7 +91,7 @@ Can't invoke public void allpages.General.a_swipeLeft(): either make it static o
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_swipeLeft -->
-        <test-method status="FAIL" signature="d_opennevigationPane()[pri:0, instance:null]" name="d_opennevigationPane" duration-ms="0" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:12Z">
+        <test-method status="FAIL" signature="d_opennevigationPane()[pri:0, instance:null]" name="d_opennevigationPane" duration-ms="0" started-at="2015-12-11T10:44:22Z" finished-at="2015-12-11T10:44:22Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -127,7 +127,7 @@ Can't invoke public void allpages.General.d_opennevigationPane(): either make it
           <reporter-output>
           </reporter-output>
         </test-method> <!-- d_opennevigationPane -->
-        <test-method status="FAIL" signature="c_waithere5()[pri:0, instance:null]" name="c_waithere5" duration-ms="0" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:12Z">
+        <test-method status="FAIL" signature="c_waithere5()[pri:0, instance:null]" name="c_waithere5" duration-ms="0" started-at="2015-12-11T10:44:22Z" finished-at="2015-12-11T10:44:22Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -163,7 +163,7 @@ Can't invoke public void allpages.General.c_waithere5(): either make it static o
           <reporter-output>
           </reporter-output>
         </test-method> <!-- c_waithere5 -->
-        <test-method status="FAIL" signature="b_waithere20()[pri:0, instance:null]" name="b_waithere20" duration-ms="0" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:12Z">
+        <test-method status="FAIL" signature="b_waithere20()[pri:0, instance:null]" name="b_waithere20" duration-ms="0" started-at="2015-12-11T10:44:22Z" finished-at="2015-12-11T10:44:22Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -201,34 +201,36 @@ Can't invoke public void allpages.General.b_waithere20(): either make it static 
         </test-method> <!-- b_waithere20 -->
       </class> <!-- allpages.General -->
       <class name="test.testappandroid">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@16e8792]" name="setUp" is-config="true" duration-ms="9205" started-at="2015-12-10T18:03:12Z" finished-at="2015-12-10T18:03:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testappandroid@df4efb]" name="setUp" is-config="true" duration-ms="6668" started-at="2015-12-11T10:44:22Z" finished-at="2015-12-11T10:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testcase_2()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_2" duration-ms="711" started-at="2015-12-10T18:03:21Z" finished-at="2015-12-10T18:03:22Z">
+        <test-method status="PASS" signature="testcase_2()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_2" duration-ms="831" started-at="2015-12-11T10:44:29Z" finished-at="2015-12-11T10:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method status="FAIL" signature="testcase_3()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_3" duration-ms="20292" started-at="2015-12-10T18:03:22Z" finished-at="2015-12-10T18:03:42Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="testcase_3()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_3" duration-ms="20284" started-at="2015-12-11T10:44:30Z" finished-at="2015-12-11T10:44:50Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/dummy_merchant_search_bar}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.26 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/dummy_merchant_search_bar}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -277,30 +279,32 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_3 -->
-        <test-method status="FAIL" signature="testcase_4()[pri:0, instance:test.testappandroid@16e8792]" name="testcase_4" duration-ms="20340" started-at="2015-12-10T18:03:42Z" finished-at="2015-12-10T18:04:03Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="testcase_4()[pri:0, instance:test.testappandroid@df4efb]" name="testcase_4" duration-ms="20401" started-at="2015-12-11T10:44:50Z" finished-at="2015-12-11T10:45:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.34 seconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/checkout_cart_button}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.34 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/checkout_cart_button}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -349,30 +353,32 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_4 -->
-        <test-method status="FAIL" signature="i_AddAddress()[pri:0, instance:test.testappandroid@16e8792]" name="i_AddAddress" duration-ms="20439" started-at="2015-12-10T18:04:03Z" finished-at="2015-12-10T18:04:23Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="i_AddAddress()[pri:0, instance:test.testappandroid@df4efb]" name="i_AddAddress" duration-ms="20060" started-at="2015-12-11T10:45:10Z" finished-at="2015-12-11T10:45:30Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.43 seconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/navigation_drawer_icon}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.43 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/navigation_drawer_icon}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -423,34 +429,36 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_AddAddress -->
-        <test-method status="PASS" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@16e8792]" name="j_modifyaddress" duration-ms="3" started-at="2015-12-10T18:04:23Z" finished-at="2015-12-10T18:04:23Z">
+        <test-method status="PASS" signature="j_modifyaddress()[pri:0, instance:test.testappandroid@df4efb]" name="j_modifyaddress" duration-ms="0" started-at="2015-12-11T10:45:30Z" finished-at="2015-12-11T10:45:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- j_modifyaddress -->
-        <test-method status="FAIL" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@16e8792]" name="k_deleteAddres" duration-ms="20355" started-at="2015-12-10T18:04:23Z" finished-at="2015-12-10T18:04:43Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="k_deleteAddres()[pri:0, instance:test.testappandroid@df4efb]" name="k_deleteAddres" duration-ms="20533" started-at="2015-12-11T10:45:30Z" finished-at="2015-12-11T10:45:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.35 seconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/tv_popup}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.35 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/tv_popup}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -500,37 +508,39 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- k_deleteAddres -->
-        <test-method status="FAIL" signature="l_labels()[pri:0, instance:test.testappandroid@16e8792]" name="l_labels" duration-ms="10" started-at="2015-12-10T18:04:43Z" finished-at="2015-12-10T18:04:43Z">
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+        <test-method status="FAIL" signature="l_labels()[pri:0, instance:test.testappandroid@df4efb]" name="l_labels" duration-ms="20360" started-at="2015-12-11T10:45:51Z" finished-at="2015-12-11T10:46:11Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-Command duration or timeout: 10 milliseconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.36 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/add_address_cell}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 10 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.36 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/add_address_cell}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -573,37 +583,39 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- l_labels -->
-        <test-method status="FAIL" signature="m_ordertestcases()[pri:0, instance:test.testappandroid@16e8792]" name="m_ordertestcases" duration-ms="14" started-at="2015-12-10T18:04:43Z" finished-at="2015-12-10T18:04:44Z">
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+        <test-method status="FAIL" signature="m_ordertestcases()[pri:0, instance:test.testappandroid@df4efb]" name="m_ordertestcases" duration-ms="21807" started-at="2015-12-11T10:46:11Z" finished-at="2015-12-11T10:46:33Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[
-Command duration or timeout: 14 milliseconds
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21.81 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/text_order_history}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: 
-Command duration or timeout: 14 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21.81 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 02:56:46'
 System info: host: 'DEITY-3015A-103', ip: '10.22.114.198', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_25'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.grofers.customerapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=F4AZFG103235, platform=LINUX, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, desired={appPackage=com.grofers.customerapp, appActivity=com.grofers.customerapp.activities.ActivitySplashScreen, BROWSER_NAME=Android, VERSION=5.1, platformName=Android, deviceName=F4AZFG103235}, platformVersion=4.1, BROWSER_NAME=Android, webStorageEnabled=false, locationContextEnabled=false, VERSION=5.1, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
-Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
+Session ID: b9412501-c0f9-4837-b2ef-a22b277b5074
 *** Element info: {Using=id, value=com.grofers.customerapp:id/text_order_history}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
@@ -646,7 +658,7 @@ Session ID: 49101f12-9df3-4fc5-aec0-a864cda5d3ab
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- m_ordertestcases -->

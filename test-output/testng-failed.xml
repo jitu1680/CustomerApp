@@ -3,6 +3,11 @@
 <suite name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="launch_feature.first_launch">
+        <methods>
+          <include name="testcase_1"/>
+        </methods>
+      </class> <!-- launch_feature.first_launch -->
       <class name="test.testappandroid">
         <methods>
           <include name="testcase_3"/>
@@ -14,11 +19,6 @@
           <include name="m_ordertestcases"/>
         </methods>
       </class> <!-- test.testappandroid -->
-      <class name="launch_feature.first_launch">
-        <methods>
-          <include name="testcase_1"/>
-        </methods>
-      </class> <!-- launch_feature.first_launch -->
       <class name="allpages.General">
         <methods>
           <include name="d_opennevigationPane"/>

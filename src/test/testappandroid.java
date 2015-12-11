@@ -82,157 +82,15 @@ public void setUp() throws MalformedURLException{
 }
 
 
-@Test(groups = "sanity", priority=2)
-public void testcase_2(){
-	System.out.println("Test Case 2 Executing....");
-	//login button and login page opening
-	if(!driver.findElements(objlogin.Nevigation_Login).isEmpty()) 
-	{					
-			System.out.println("login button and login page opening");
-			System.out.println("Check if function calls when No Login button..");		//Added by Faizan
-			WebElement loginbutton= driver.findElement(objlogin.Nevigation_Login);
-			System.out.println("Is login button is displayed : " +loginbutton.isDisplayed());
-			loginbutton.click();
-			
-			// Check login function megerd by Faizan
-			
-			System.out.println("Login page contents");
-			
-			WebElement title= driver.findElement(log.Login_Titletext);
-		    System.out.println("Title text =" +title.getText());
-		    
-		    WebElement subtext= driver.findElement(log.Login_Subtext);
-		    System.out.println("Sub text : " +subtext.getText());
-		    
-		    WebElement nextbutton= driver.findElement(log.Login_ButtonLogin);
-		    System.out.println("Text over button : " +nextbutton.getText());
-		    System.out.println("Next button is displayed : " +nextbutton.isDisplayed());
-		    System.out.println("Next button is enabled : " +nextbutton.isEnabled());
-		    
-		    
-		    WebElement enterphone = driver.findElement(log.Login_Enterphoneno);
-		    System.out.println("Text over enterphone number :" +enterphone.getText());
-		    System.out.println("Click the enterphone no ");
-		    enterphone.sendKeys(util.Mob_No);
-		    nextbutton.click();
-		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-	
-		  
-		    //Verification function merged by Faizan
-			System.out.println("Verification page function");
-			WebElement title1 = driver.findElement(verify.Verification_titletext);
-			System.out.println("Title text = " +title1.getText());
-			
-			//subtitle
-			WebElement subtext2 = driver.findElement(verify.Verification_subtext);
-			System.out.println("Sub Text =" +subtext2.getText());
-			
-			//Loader
-			try{
-			WebElement load = driver.findElement(verify.Verification_progressbar);
-			System.out.println("Is progressbar present =" +load.isDisplayed());
-			
-			// Again sub text over verification code
-			 WebElement text = driver.findElement(verify.Verification_textmanually);
-			 System.out.println("Text for manually entering code = " +text.getText());
-			}
-			catch (NoSuchElementException e){
-				Reporter.log("no such element");
-			}
-			 //Entering verification code
-			 MobileElement Enter_Code = driver.findElement(verify.Verification_Entercode);
-			 WebElement done = driver.findElement(verify.Verification_Donebutton);
-			 System.out.println("Displayed text = " +Enter_Code.getText());
-			 Enter_Code.tap(1, 200);
-			 Enter_Code.sendKeys(util.Key);
-			 done.click();
-			 //System.out.println("out clicked");
-			 //gen.c_waithere5();
-			 try {
-				Thread.sleep(10000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			 gen.a_swipeLeft();
-			 System.out.println("Swiped");
-			 //gen.waithere20();
-			 
-			
-		}
-	System.out.println("Test Case 2 Executed !!!");
-}
 
 
 
 
 
-//Search and add item and go to My cart.
-
-@Test(groups = "sanity", priority=3)
-public void testcase_3()  
-      { 
-		System.out.println("Test Case 3 Executing....");
-		  gen.b_waithere20();
-	      MobileElement search= driver.findElement(allid.feedsearch);
-	      search.tap(1, 200);
-	      MobileElement search2 = driver.findElement(allid.search);
-	      search2.tap(1, 200);
-	      search2.sendKeys("aquafina");
-	    //key code for search button is 66 on keyboard
-	      driver.pressKeyCode(66);
-	      MobileElement add = driver.findElement(allid.addbutton_searched);
-	      add.tap(1, 100);
-	      MobileElement tapcart = driver.findElement(allid.taketocart);
-	      tapcart.tap(1, 200);
-	      System.out.println("Test Case 3 Executed !!!");
-    }
 
 
-// go to checkout page.
-@Test (groups = "sanity", priority=4)
-public void testcase_4()
-{
-	System.out.println("Test Case 4 Executing....");
-	System.out.println("click on chekcout");
-	MobileElement tapchekout = driver.findElement(allid.checkoutbutton);
-	tapchekout.tap(1, 200);
-	
-	String Titlecheckout = driver.findElement(allid.chekoutpage_title).getText();
-	org.testng.Assert.assertEquals(Titlecheckout, "Checkout");
-	
-	String TotalamountText = driver.findElement(allid.totalamount_text).getText();
-	org.testng.Assert.assertEquals(TotalamountText,"Total Amount");
-	
-	String DeliveryamountText = driver.findElement(allid.deliverycharges_text).getText();
-	org.testng.Assert.assertEquals(DeliveryamountText, "Delivery Charges");
-	
-	String Amountpayable = driver.findElement(allid.amountPayable_text).getText();
-	org.testng.Assert.assertEquals(Amountpayable, "Amount Payable");
-	
-	String Promocode = driver.findElement(allid.gotPromo_text).getText();
-	org.testng.Assert.assertEquals(Promocode, "Got a promo code?");
-    
-	
-	
-	String DeliveryaddressTitleText = driver.findElement(allid.checkout_addresstitle).getText();
-	org.testng.Assert.assertEquals(DeliveryaddressTitleText, "Delivery Address");
-	
-	String DeliverytimeTitleText = driver.findElement(allid.checkout_timetitle).getText();
-	org.testng.Assert.assertEquals(DeliverytimeTitleText, "Schedule Delivery Date & Time");
-	
-	
-//	String Terms = driver.findElement(allid.TC_text).getText();
-//	org.testng.Assert.assertEquals(Terms, "By using this application, you agree to the \n"
-//			+ "Terms of Service and Privacy Policy");
-	
-	String  ProceedtoPaymentText =driver.findElement(allid.proceedtopayment).getText();
-	org.testng.Assert.assertEquals(ProceedtoPaymentText, "Proceed to Payment");
-	
-	System.out.println("Test Case 4 Executed !!!");
-	
-}
+
+
 
 // payment option page -----------BLOCKED FOR NOW---------------
 /*@Test (priority=5)
