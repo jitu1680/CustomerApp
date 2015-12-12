@@ -21,7 +21,7 @@ import test.util;
 public class login extends testappandroid {
 	
 	
-	@Test(groups = "sanity", priority=2)
+@Test(priority=3)
 	public void testcase_2(){
 		System.out.println("Test Case 2 Executing....");
 		//login button and login page opening

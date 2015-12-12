@@ -11,7 +11,7 @@ public class my_cart extends testappandroid {
 	
 	//Search and add item and go to My cart.
 
-	@Test(groups = "sanity", priority=3)
+	@Test(priority=4)
 	public void testcase_3()  
 	      { 
 			System.out.println("Test Case 3 Executing....");

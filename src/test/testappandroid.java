@@ -56,7 +56,7 @@ public class  testappandroid {
 	public void launch_app()  throws MalformedURLException{
 		System.out.println("Setup1 called....");
 		capabilities.setCapability("BROWSER_NAME", "Android");
-		capabilities.setCapability("VERSION", "5.1"); 
+		capabilities.setCapability("VERSION", "5.0"); 
 		capabilities.setCapability("deviceName","F4AZFG103235");
 		capabilities.setCapability("platformName","Android");
 		capabilities.setCapability("appPackage", "com.grofers.customerapp");

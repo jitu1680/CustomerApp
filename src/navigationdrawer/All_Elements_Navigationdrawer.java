@@ -22,5 +22,7 @@ public class All_Elements_Navigationdrawer {
  public By Nevigation_menu = By.id("com.grofers.customerapp:id/navigation_drawer_icon");
  //Help
  public By Navigation_help = By.id("com.grofers.customerapp:id/help");
+ //My Addresses Button
+ public By Navigation_My_Addresses = By.id("com.grofers.customerapp:id/my_addresses");
 
 }

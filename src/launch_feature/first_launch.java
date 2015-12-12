@@ -25,7 +25,7 @@ import basic_actions.basic_actions;
 
 public class first_launch extends testappandroid {
 	
-@Test(groups = {"sanity"})
+@Test(groups = {"sanity"}, priority=1)
 	public void testcase_1_1(){
 				
 			System.out.println("Test Case 1_1 Executing....");
@@ -46,7 +46,7 @@ public class first_launch extends testappandroid {
 		}	
 
 	
-@Test(groups = "sanity", priority=1)
+@Test(priority=2)
 	public void testcase_1_2(){
 				
 			System.out.println("Test Case 1_2 Executing....");

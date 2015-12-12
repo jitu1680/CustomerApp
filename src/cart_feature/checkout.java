@@ -10,7 +10,7 @@ public class checkout extends testappandroid {
 	
 	
 	// go to checkout page.
-	@Test (groups = "sanity", priority=4)
+	@Test (priority=5)
 	public void testcase_4()
 	{
 		System.out.println("Test Case 4 Executing....");
