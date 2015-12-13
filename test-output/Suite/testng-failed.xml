@@ -3,36 +3,17 @@
 <suite name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="my_information_feature.login">
+      <class name="cart_feature.checkout">
         <methods>
           <include name="setUp"/>
+          <include name="testcase_4"/>
         </methods>
-      </class> <!-- my_information_feature.login -->
+      </class> <!-- cart_feature.checkout -->
       <class name="test.testappandroid">
         <methods>
           <include name="launch_app"/>
         </methods>
       </class> <!-- test.testappandroid -->
-      <class name="allpages.General">
-        <methods>
-          <include name="d_opennavigationPane"/>
-          <include name="waithere5"/>
-          <include name="waithere10"/>
-          <include name="swipeLeft"/>
-          <include name="swipeRight"/>
-          <include name="waithere20"/>
-        </methods>
-      </class> <!-- allpages.General -->
-      <class name="cart_feature.checkout">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- cart_feature.checkout -->
-      <class name="launch_feature.first_launch">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- launch_feature.first_launch -->
       <class name="cart_feature.my_cart">
         <methods>
           <include name="setUp"/>

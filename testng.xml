@@ -4,11 +4,13 @@
   <test name="Test">
     <classes>
       <class name="test.testappandroid"/>
-      <class name="launch_feature.first_launch"/>
+  <!--     <class name="launch_feature.first_launch"/>
       <class name="my_information_feature.login"/>
       <class name="cart_feature.my_cart"/>
       <class name="cart_feature.checkout"/>
-      <class name="allpages.General"/>
+      <class name="allpages.General"/>-->
+      <class name="cart_feature.my_cart"/>
+      <class name="cart_feature.checkout"/>
     </classes> 
   </test> <!-- Test -->
 </suite> <!-- Suite -->

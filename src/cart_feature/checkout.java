@@ -42,14 +42,22 @@ public class checkout extends testappandroid {
 		org.testng.Assert.assertEquals(DeliverytimeTitleText, "Schedule Delivery Date & Time");
 		
 		
-//		String Terms = driver.findElement(allid.TC_text).getText();
-//		org.testng.Assert.assertEquals(Terms, "By using this application, you agree to the \n"
-//				+ "Terms of Service and Privacy Policy");
+		String Terms = driver.findElement(allid.TC_text).getText();
+		System.out.println(Terms);
+		org.testng.Assert.assertEquals(Terms, "By using this application, you agree to the\n"
+				+ " Terms of Service and Privacy Policy");
 		
 		String  ProceedtoPaymentText =driver.findElement(allid.proceedtopayment).getText();
 		org.testng.Assert.assertEquals(ProceedtoPaymentText, "Proceed to Payment");
 		
 		System.out.println("Test Case 4 Executed !!!");
+		
+	}
+	
+	@Test(priority=6)
+	public void test_case6(){
+		MobileElement del_date_time = driver.findElement(allid.timedeliveryedit_button);
+		del_date_time.tap(1, 200);
 		
 	}
 
